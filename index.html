@@ -43,26 +43,32 @@
         <!-- barra con promociones nuevas -->
         <div class="promoBar">
             <p class="barText">Promociones</p>
-            <p>prueba git</p>
         </div>
 
 
-
-
         <!-- nav Cajas Armadas, Construye tu Caja, Corporativo, Contactanos bar -->
-        <nav class="flex">
 
+        <div class="navBar">
             <div>
                 <img class="logo" src="images/LogoGold.svg" alt=" Nunchi Logo">
             </div>
+            <nav>
+                <ul>
+                    <li><a class="navItems" href="./index.html">Inicio</a></li>
+                    <li><a class="navItems" href="pages/builtdBox.html">Cajas Armadas</a></li>
+                    <li><a class="navItems" href="pages/newBox.html">Construye tu Caja</a></li>
+                    <li><a class="navItems" href="pages/corporativo.html">Corporativo</a></li>
+                    <li><a class="navItems" href="pages/contacto.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 
+            <a class="navItems" href="pages/builtdBox.html">Cajas Armadas</a>
+            <a class="navItems" href="pages/newBox.html">Construye tu Caja</a>
+            <a class="navItems" href="pages/corporativo.html">Corporativo</a>
+            <a class="navItems" href="pages/contacto.html">Contacto</a> -->
 
-            <div class="navItems">
-                <a class="navItems" href="pages/builtdBox.html">Cajas Armadas</a>
-                <a class="navItems" href="pages/newBox.html">Construye tu Caja</a>
-                <a class="navItems" href="pages/corporativo.html">Corporativo</a>
-                <a class="navItems" href="pages/contacto.html">Contacto</a>
-            </div>
-        </nav>
+
 
     </header>
 
@@ -106,35 +112,34 @@
 
         <!-- Form -->
 
-        <section class="form">
-            <h3>Contactanos</h3>
-            <form action="">
-                <fieldset>
-                    <label for="Nombre"></label>
-                    <input type="text" id="Nombre" placeholder="Nombre">
-                </fieldset>
-                <fieldset>
-                    <label for="Email"></label>
-                    <input type="email" id="email" placeholder="Email" required>
-                </fieldset>
-                <fieldset>
-                    <label for="Telefono"></label>
-                    <input type="tel" id="Telefono" placeholder="Teléfono">
-                </fieldset>
-                <fieldset>
-                    <label for="Mensaje"></label>
-                    <textarea name="message" id="message" placeholder="Mensaje"></textarea>
-                </fieldset>
-                <div class="enviar">
-                    <input type="submit" value="Enviar" class="enviarButton">
+        <section>
+            <h3>Estas empresas ya confian en nosotros</h3>
+
+            <div class="clientesContainer">
+
+                <div><a href="https://glovoapp.com/"><img class="cliente" src="./images/Glovo.svg" alt="glovoLogo"
+                            srcset=""></a>
                 </div>
 
-            </form>
+                <div><a href="https://www.globant.com/"><img class="cliente" src="./images/globant-logo-dark.svg"
+                            alt="globant" srcset=""></a>
+                </div>
+
+                <div><a href="https://www.roemmers.com.ar/"><img class="cliente" src="./images/Roemmers.png"
+                            alt="RoomersLogo" srcset=""></a>
+                </div>
+
+                <div><a href="https://www.visa.com.ar/"><img class="cliente" src="./images/Visa.png" alt="visaLogo"
+                            srcset=""></a>
+                </div>
+            </div>
+
+
         </section>
     </main>
 
     <footer>
-        <i class=" fab footer-icon fa-twitter"></i>
+        <i class="fab footer-icon fa-twitter"></i>
         <i class="fab footer-icon fa-facebook-f"></i>
         <i class="fab footer-icon fa-instagram"></i>
         <i class="far footer-icon fa-envelope-open"></i>

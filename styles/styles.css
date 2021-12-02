@@ -14,21 +14,21 @@ body {
 
     background-color: #AA7680;
     width: 100%;
-    height: 35px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .promoBar {
 
     background-color: #D6B0B0;
     width: 100%;
-    height: 35px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 
 }
 
@@ -42,39 +42,54 @@ body {
 }
 
 
-.flex {
+.logo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 70%;
+    height: 100px;
+    margin-left: 15rem;
+    margin-right: 15%;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    margin-left: 18rem;
-
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2%;
 }
 
 nav {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 80%;
     margin-top: 5px;
+    margin-left: 5rem;
+}
 
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 
 }
 
 .navItems {
+    display: flex;
+    flex-direction: row;
     margin-left: 5px;
     padding: 5px;
-    text-decoration: none;
     font-family: 'Sofia Pro', sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
+    text-decoration: none;
     color: #777777;
 }
 
 a:hover {
-    margin: 2px;
+
     transition: all 0.5s;
     text-decoration: underline;
     color: #AA7680;
@@ -115,6 +130,102 @@ h3 {
     color: #777777;
     padding: 1rem;
     padding-bottom: 3rem;
+}
+
+
+.clientesContainer {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+.builtBoxContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.producto {
+    border-style: groove;
+}
+
+.producto img {
+    display: flex;
+    margin: 0 auto;
+    width: 20rem;
+    height: 20rem;
+}
+
+.nameProduct {
+    text-align: center;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.priceProduct {
+    text-align: center;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #AF9B5F;
+}
+
+.btnComprar {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #AA7680;
+    border: none;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-transform: uppercase;
+
+}
+
+.btnComprar:hover {
+    transition: all 0.2s;
+    background-color: #AF9B5F;
+}
+
+.map {
+
+    width: 800px;
+    height: 450px;
+    border: 0;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+
 }
 
 .form {
@@ -164,14 +275,12 @@ textarea {
 }
 
 
-
 .producto {
     padding: 1rem;
     margin-bottom: 2rem;
 }
 
 .contenido-producto p {
-
     text-align: center;
     margin: 1rem 0;
     line-height: 1.2;
@@ -184,6 +293,8 @@ textarea {
 .contenido-producto .precio {
     font-size: 2.8rem;
 }
+
+
 
 .listaCajas {
     padding: 9rem 0;
@@ -198,6 +309,29 @@ textarea {
     text-decoration: none;
     background-color: royalblue;
     text-align: center;
+    list-style: none;
+}
+
+.workInProgressContainer {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+
+}
+
+.workInProgressImg {
+    display: flex;
+    width: 40rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+.workInProgressTxt {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+
 }
 
 
@@ -208,6 +342,4 @@ footer {
     height: 5rem;
     margin-top: 5rem;
     padding-top: 1.5rem;
-
-
 }

@@ -43,32 +43,39 @@
 
 
 
-        <!-- nav Cajas Armadas, Construye tu Caja, Corporativo, Contactanos bar -->
-        <nav class="flex">
-
+        <div class="navBar">
             <div>
                 <img class="logo" src="../images/LogoGold.svg" alt=" Nunchi Logo">
             </div>
-
-            <div class="navItems">
-                <a class="navItems" href="../index.html">Inicio</a>
-                <a class="navItems" href="builtdBox.html">Cajas Armadas</a>
-                <a class="navItems" href="newBox.html">Construye tu Caja</a>
-                <a class="navItems" href="corporativo.html">Corporativo</a>
-                <a class="navItems" href="contacto.html">Contacto</a>
-            </div>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a class="navItems" href="../index.html">Inicio</a></li>
+                    <li><a class="navItems" href="builtdBox.html">Cajas Armadas</a></li>
+                    <li><a class="navItems" href="newBox.html">Construye tu Caja</a></li>
+                    <li><a class="navItems" href="corporativo.html">Corporativo</a></li>
+                    <li><a class="navItems" href="contacto.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
     <main>
         <h1>Regalos personalizados </h1>
 
+        <h3>Contactanos</h3>
+        <!-- map -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4152255423123!2d-58.45765148434403!3d-34.568358680468734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d09b209853%3A0x1917d2fe34e100b8!2sMoldes%201570%2C%20C1426ALT%20CABA!5e0!3m2!1ses!2sar!4v1638402302575!5m2!1ses!2sar"
+                frameborder="0"></iframe>
+        </div>
+
+
         <!-- Form -->
 
         <section class="form">
-            <h3>Contactanos</h3>
-            <form action="">
+            <form action="POST">
                 <fieldset>
                     <label for="Nombre"></label>
                     <input type="text" id="Nombre" placeholder="Nombre">
