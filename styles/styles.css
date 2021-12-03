@@ -34,7 +34,9 @@ body {
 
 .barText {
 
-    font-family: 'Sofia Pro', sans-serif;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -81,7 +83,9 @@ nav ul {
     flex-direction: row;
     margin-left: 5px;
     padding: 5px;
-    font-family: 'Sofia Pro', sans-serif;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -126,7 +130,9 @@ h3 {
 }
 
 .text {
-    font-family: 'Sofia Pro', sans-serif;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #777777;
     padding: 1rem;
     padding-bottom: 3rem;
