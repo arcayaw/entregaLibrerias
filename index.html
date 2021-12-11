@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawesome -->
-    <!-- <script src="https://kit.fontawesome.com/d3fce60580.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/d3fce60580.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/iwl2qzk.css">
 
     <!-- Fonts -->
@@ -16,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- fonts 2 -->
 
@@ -23,9 +25,6 @@
 
     <!-- Favicon   -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-
-    <!-- Reset Styles -->
-    <link rel="stylesheet" href="styles/normalice.css">
 
     <!-- personal Styles -->
     <link rel="stylesheet" href="styles/styles.css">
@@ -35,50 +34,36 @@
 
 <body>
     <header>
-        <!-- barra con news -->
         <div class="newsBar">
-            <p class="barText">Noticias</p>
-
+            <p class="barText animate__animated animate__pulse">la
+                navidad esta acá | envios
+                gratis a partir de $7000
+            </p>
         </div>
 
-        <!-- barra con promociones nuevas -->
         <div class="promoBar">
             <p class="barText">Promociones</p>
         </div>
 
-
-        <!-- nav Cajas Armadas, Construye tu Caja, Corporativo, Contactanos bar -->
-
-        <div class="navBar">
-            <div>
-                <img class="logo" src="images/LogoGold.svg" alt=" Nunchi Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="navItems" href="./index.html">Inicio</a></li>
-                    <li><a class="navItems" href="pages/builtdBox.html">Cajas Armadas</a></li>
-                    <li><a class="navItems" href="pages/newBox.html">Construye tu Caja</a></li>
-                    <li><a class="navItems" href="pages/corporativo.html">Corporativo</a></li>
-                    <li><a class="navItems" href="pages/contacto.html">Contacto</a> </li>
-                </ul>
-            </nav>
-        </div>
-        <!-- 
-            <a class="navItems" href="pages/builtdBox.html">Cajas Armadas</a>
-            <a class="navItems" href="pages/newBox.html">Construye tu Caja</a>
-            <a class="navItems" href="pages/corporativo.html">Corporativo</a>
-            <a class="navItems" href="pages/contacto.html">Contacto</a> -->
-
-
-
+        <nav>
+            <ul class="menuBox">
+                <a href="../Nunchi/index.html">
+                    <img class="logo" src="images/LogoGold.svg" alt=" Nunchi Logo">
+                </a>
+                <li><a class="navItems" href="../Nunchi/index.html">Home</a></li>
+                <li><a class="navItems" href="pages/builtdBox.html">Box prediseñadas</a></li>
+                <li><a class="navItems" href="pages/newBox.html">Construye tu Box</a></li>
+                <li><a class="navItems" href="pages/faq.html">FAQ</a></li>
+                <li><a class="navItems" href="pages/contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h1>Regalos personalizados </h1>
+        <h1>Box Personalizadas </h1>
 
-        <!-- Hero image -->
         <section class="hero">
-            <img src="images/hero.png" alt="Hero">
+            <img src="images/home.jpg" alt="Hero">
         </section>
 
         <section class="container">
@@ -111,27 +96,25 @@
             </div>
         </section>
 
-        <!-- Form -->
-
         <section>
-            <h3>Estas empresas ya confian en nosotros</h3>
+            <h3 class="clientTitle">Estas empresas ya confian en nosotros</h3>
 
             <div class="clientesContainer">
 
-                <div><a href="https://glovoapp.com/"><img class="cliente" src="./images/Glovo.svg" alt="glovoLogo"
-                            srcset=""></a>
+                <div><a href="https://glovoapp.com/" target="_blank"><img class="cliente glovo" src="./images/Glovo.svg"
+                            alt="glovoLogo" srcset=""></a>
                 </div>
 
-                <div><a href="https://www.globant.com/"><img class="cliente" src="./images/globant-logo-dark.svg"
-                            alt="globant" srcset=""></a>
+                <div><a href="https://www.globant.com/" target="_blank"><img class="cliente globant"
+                            src="./images/globant-logo-dark.svg" alt="globant" srcset=""></a>
                 </div>
 
-                <div><a href="https://www.roemmers.com.ar/"><img class="cliente" src="./images/Roemmers.png"
-                            alt="RoomersLogo" srcset=""></a>
+                <div><a href="https://www.sudamerica.boehringer-ingelheim.com/" target="_blank"><img
+                            class="cliente roemmers" src="./images/lab.jpg" alt="RoomersLogo" srcset=""></a>
                 </div>
 
-                <div><a href="https://www.visa.com.ar/"><img class="cliente" src="./images/Visa.png" alt="visaLogo"
-                            srcset=""></a>
+                <div><a href="https://www.visa.com.ar/" target="_blank"><img class="cliente visa"
+                            src="./images/Visa.png" alt="visaLogo" srcset=""></a>
                 </div>
             </div>
 
@@ -139,11 +122,17 @@
         </section>
     </main>
 
+
+    <a class="whap" href="https://api.whatsapp.com/send?phone=5491157175314" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+
     <footer>
-        <i class="fab footer-icon fa-twitter"></i>
-        <i class="fab footer-icon fa-facebook-f"></i>
-        <i class="fab footer-icon fa-instagram"></i>
-        <i class="far footer-icon fa-envelope-open"></i>
+        <a class="fab footer-icon fa-twitter icon" href="https://twitter.com/home"></a>
+        <a class="fab footer-icon fa-facebook-f icon" href="https://www.facebook.com/NunchiBox/"></a>
+        <a class="fab footer-icon fa-instagram icon" href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
+        <a class="far footer-icon fa-envelope-open icon" href="mailto:nunchibox.info@gmail.com"></a>
         <p>© Copyright 2020 Nunchi</p>
 
     </footer>

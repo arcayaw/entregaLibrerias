@@ -18,8 +18,9 @@
     <!-- Favicon   -->
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 
-    <!-- Reset Styles -->
-    <link rel="stylesheet" href="../styles/normalice.css">
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <!-- personal Styles -->
     <link rel="stylesheet" href="../styles/styles.css">
@@ -29,55 +30,33 @@
 
 <body>
     <header>
-        <!-- barra con news -->
         <div class="newsBar">
-            <p class="barText">Noticias</p>
-
+            <p class="barText animate__animated animate__pulse">la
+                navidad esta acá | envios
+                gratis a partir de $7000
+            </p>
         </div>
 
-        <!-- barra con promociones nuevas -->
         <div class="promoBar">
             <p class="barText">Promociones</p>
         </div>
 
-
-
-
-        <!-- nav Cajas Armadas, Construye tu Caja, Corporativo, Contactanos bar -->
-        <!-- <nav class="flex">
-
-            <div>
-                <img class="logo" src="../images/LogoGold.svg" alt=" Nunchi Logo">
-            </div>
-
-            <div class="navItems">
-                <a class="navItems" href="../index.html">Inicio</a>
-                <a class="navItems" href="builtdBox.html">Cajas Armadas</a>
-                <a class="navItems" href="newBox.html">Construye tu Caja</a>
-                <a class="navItems" href="corporativo.html">Corporativo</a>
-                <a class="navItems" href="contacto.html">Contacto</a>
-            </div>
-        </nav> -->
-
-        <div class="navBar">
-            <div>
-                <img class="logo" src="../images/LogoGold.svg" alt=" Nunchi Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="navItems" href="../index.html">Inicio</a></li>
-                    <li><a class="navItems" href="builtdBox.html">Cajas Armadas</a></li>
-                    <li><a class="navItems" href="newBox.html">Construye tu Caja</a></li>
-                    <li><a class="navItems" href="corporativo.html">Corporativo</a></li>
-                    <li><a class="navItems" href="contacto.html">Contacto</a> </li>
-                </ul>
-            </nav>
-        </div>
-
+        <nav>
+            <ul class="menuBox">
+                <a href="../index.html">
+                    <img class="logo" src="../images/LogoBlack.svg" alt=" Nunchi Logo">
+                </a>
+                <li><a class="navItems" href="../index.html">Home</a></li>
+                <li><a class="navItems" href="./builtdBox.html">Box prediseñadas</a></li>
+                <li><a class="navItems" href="./newBox.html">Construye tu Box</a></li>
+                <li><a class="navItems" href="./faq.html">FAQ</a></li>
+                <li><a class="navItems" href="./contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h1>Regalos personalizados </h1>
+        <h1>Box Personalizadas </h1>
 
         <section class="builtBoxContainer">
             <div class="producto ">
@@ -138,23 +117,25 @@
                 <p class="priceProduct">$6500</p>
                 <button class="btnComprar">Agregar al carrito</button>
 
-
             </div>
-
-
         </section>
 
 
     </main>
 
-    <footer>
-        <i class=" fab footer-icon fa-twitter"></i>
-        <i class="fab footer-icon fa-facebook-f"></i>
-        <i class="fab footer-icon fa-instagram"></i>
-        <i class="far footer-icon fa-envelope-open"></i>
-        <p>© Copyright 2020 Nunchi</p>
+    <a class="whap" href="https://api.whatsapp.com/send?phone=5491157175314" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
+
+    <footer>
+        <a class="fab footer-icon fa-twitter icon" href="https://twitter.com/home"></a>
+        <a class="fab footer-icon fa-facebook-f icon" href="https://www.facebook.com/NunchiBox/"></a>
+        <a class="fab footer-icon fa-instagram icon" href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
+        <a class="far footer-icon fa-envelope-open icon" href="mailto:nunchibox.info@gmail.com"></a>
+        <p>© Copyright 2020 Nunchi</p>
     </footer>
+
 </body>
 
 </html>

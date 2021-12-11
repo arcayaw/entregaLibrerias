@@ -18,8 +18,8 @@
     <!-- Favicon   -->
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 
-    <!-- Reset Styles -->
-    <link rel="stylesheet" href="../styles/normalice.css">
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- personal Styles -->
     <link rel="stylesheet" href="../styles/styles.css">
@@ -29,80 +29,185 @@
 
 <body>
     <header>
-        <!-- barra con news -->
         <div class="newsBar">
-            <p class="barText">Noticias</p>
-
+            <p class="barText animate__animated animate__pulse">la
+                navidad esta acá | envios
+                gratis a partir de $7000
+            </p>
         </div>
 
-        <!-- barra con promociones nuevas -->
         <div class="promoBar">
             <p class="barText">Promociones</p>
         </div>
 
 
-
-
-        <!-- nav Cajas Armadas, Construye tu Caja, Corporativo, Contactanos bar -->
-        <!-- <nav class="flex">
-
-            <div>
-                <img class="logo" src="../images/LogoGold.svg" alt=" Nunchi Logo">
-            </div>
-
-            <div class="navItems">
-                <a class="navItems" href="../index.html">Inicio</a>
-                <a class="navItems" href="builtdBox.html">Cajas Armadas</a>
-                <a class="navItems" href="newBox.html">Construye tu Caja</a>
-                <a class="navItems" href="corporativo.html">Corporativo</a>
-                <a class="navItems" href="contacto.html">Contacto</a>
-            </div>
-        </nav> -->
-
-        <div class="navBar">
-            <div>
-                <img class="logo" src="../images/LogoGold.svg" alt=" Nunchi Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="navItems" href="../index.html">Inicio</a></li>
-                    <li><a class="navItems" href="builtdBox.html">Cajas Armadas</a></li>
-                    <li><a class="navItems" href="newBox.html">Construye tu Caja</a></li>
-                    <li><a class="navItems" href="corporativo.html">Corporativo</a></li>
-                    <li><a class="navItems" href="contacto.html">Contacto</a> </li>
-                </ul>
-            </nav>
-        </div>
-
+        <nav>
+            <ul class="menuBox">
+                <a href="../index.html">
+                    <img class="logo" src="../images/LogoBlack.svg" alt=" Nunchi Logo">
+                </a>
+                <li><a class="navItems" href="../index.html">Home</a></li>
+                <li><a class="navItems" href="./builtdBox.html">Box prediseñadas</a></li>
+                <li><a class="navItems" href="./newBox.html">Construye tu Box</a></li>
+                <li><a class="navItems" href="./faq.html">FAQ</a></li>
+                <li><a class="navItems" href="./contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h1>Regalos personalizados </h1>
+        <h1>Box Personalizadas </h1>
 
-        <section>
+        <!-- <aside id="barraLateral" class="barraLateral" >
 
-            <ul class="listaCajas">
-                <li>Caja 1</li>
-                <li>Caja 2</li>
-                <li>Caja 3</li>
-                <li>Caja 4</li>
-            </ul>
-        </section>
+            <h3> Productos</h3>
+        </aside> -->
 
-        <div class="workInProgressContainer">
-            <p class="workInProgressTxt">Página en Construcción</p>
-            <img class="workInProgressImg" src="../images/WorkingInProgress.jpg" alt="">
+        <div class="newBoxContainer">
+
+            <div>
+                <h3>Desayunos</h3>
+                <div class="desayunos">
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Media Luna</p>
+                        <p class="priceProduct">$500</p>
+                        <div class="agregar">
+                            <button class="btnAgregar">+</button>
+                            <button class="btnAgregar">-</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Sandwich</p>
+                        <p class="priceProduct">$500</p>
+                        <!-- <button class="btnComprar">Agregar al carrito</button> -->
+                        <div class="agregar">
+                            <button class="btnAgregar">+</button>
+                            <button class="btnAgregar">-</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign"> Arepas</p>
+                        <p class="priceProduct">$500</p>
+                        <!-- <button class="btnComprar">Agregar al carrito</button> -->
+                        <div class="agregar">
+                            <button class="btnAgregar">+</button>
+                            <button class="btnAgregar">-</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Desayuno Fitness</p>
+                        <p class="priceProduct">$500</p>
+                        <!-- <button class="btnComprar">Agregar al carrito</button> -->
+                        <div class="agregar">
+                            <button class="btnAgregar">+</button>
+                            <button class="btnAgregar">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Bebidas Alcoholicas</h3>
+                <div class="bebidas">
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Felino Cabernet</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Absolut</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Jameson</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Tanqueray</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Golosinas</h3>
+                <div class="golosinas">
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">ferrero rocher</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">hershey</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Nutella</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Toblerone</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Varios</h3>
+                <div class="varios">
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Mate personalizado</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Botella metalica personalizada</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">arreglo de frutas</p>
+                        <p class="priceProduct "> $500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                    <div>
+                        <img src="https://placekitten.com/100/100" alt=""></img>
+                        <p class="nameProduct verticalAlign">Kit Spa</p>
+                        <p class="priceProduct">$500</p>
+                        <button class="btnComprar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
     </main>
-
     <footer>
-        <i class=" fab footer-icon fa-twitter"></i>
-        <i class="fab footer-icon fa-facebook-f"></i>
-        <i class="fab footer-icon fa-instagram"></i>
-        <i class="far footer-icon fa-envelope-open"></i>
+        <a class="fab footer-icon fa-twitter icon" href="https://twitter.com/home"></a>
+        <a class="fab footer-icon fa-facebook-f icon" href="https://www.facebook.com/NunchiBox/"></a>
+        <a class="fab footer-icon fa-instagram icon" href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
+        <a class="far footer-icon fa-envelope-open icon" href="mailto:nunchibox.info@gmail.com"></a>
         <p>© Copyright 2020 Nunchi</p>
-
     </footer>
 </body>
 

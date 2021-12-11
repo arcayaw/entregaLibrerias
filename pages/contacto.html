@@ -18,8 +18,9 @@
     <!-- Favicon   -->
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 
-    <!-- Reset Styles -->
-    <link rel="stylesheet" href="../styles/normalice.css">
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <!-- personal Styles -->
     <link rel="stylesheet" href="../styles/styles.css">
@@ -29,41 +30,37 @@
 
 <body>
     <header>
-        <!-- barra con news -->
         <div class="newsBar">
-            <p class="barText">Noticias</p>
-
+            <p class="barText animate__animated animate__pulse">la
+                navidad esta acá | envios
+                gratis a partir de $7000
+            </p>
         </div>
 
-        <!-- barra con promociones nuevas -->
         <div class="promoBar">
             <p class="barText">Promociones</p>
         </div>
 
 
-
-
-        <div class="navBar">
-            <div>
-                <img class="logo" src="../images/LogoGold.svg" alt=" Nunchi Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="navItems" href="../index.html">Inicio</a></li>
-                    <li><a class="navItems" href="builtdBox.html">Cajas Armadas</a></li>
-                    <li><a class="navItems" href="newBox.html">Construye tu Caja</a></li>
-                    <li><a class="navItems" href="corporativo.html">Corporativo</a></li>
-                    <li><a class="navItems" href="contacto.html">Contacto</a> </li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul class="menuBox">
+                <a href="../index.html">
+                    <img class="logo" src="../images/LogoBlack.svg" alt=" Nunchi Logo">
+                </a>
+                <li><a class="navItems" href="../index.html">Home</a></li>
+                <li><a class="navItems" href="./builtdBox.html">Box prediseñadas</a></li>
+                <li><a class="navItems" href="./newBox.html">Construye tu Box</a></li>
+                <li><a class="navItems" href="./faq.html">FAQ</a></li>
+                <li><a class="navItems" href="./contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
 
     </header>
 
     <main>
-        <h1>Regalos personalizados </h1>
+        <h1>Box Personalizadas </h1>
 
-        <h3>Contactanos</h3>
+        <h3 class="contactoTitle">Contactanos</h3>
         <!-- map -->
         <div class="map">
             <iframe
@@ -78,22 +75,22 @@
             <form action="POST">
                 <fieldset>
                     <label for="Nombre"></label>
-                    <input type="text" id="Nombre" placeholder="Nombre">
+                    <input type="text" id="Nombre" class="espacioInterno" placeholder="Nombre">
                 </fieldset>
                 <fieldset>
                     <label for="Email"></label>
-                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="email" id="email" class="espacioInterno" placeholder="Email" required>
                 </fieldset>
                 <fieldset>
                     <label for="Telefono"></label>
-                    <input type="tel" id="Telefono" placeholder="Teléfono">
+                    <input type="tel" id="Telefono" class="espacioInterno" placeholder="Teléfono">
                 </fieldset>
                 <fieldset>
                     <label for="Mensaje"></label>
-                    <textarea name="message" id="message" placeholder="Mensaje"></textarea>
+                    <textarea name="message" id="message" class="espacioInterno" placeholder="Mensaje"></textarea>
                 </fieldset>
-                <div class="enviar">
-                    <input type="submit" value="Enviar" class="enviarButton">
+                <div class="enviarButton">
+                    <input type="submit" class="enviar" value="Enviar">
                 </div>
 
             </form>
@@ -102,12 +99,11 @@
     </main>
 
     <footer>
-        <i class=" fab footer-icon fa-twitter"></i>
-        <i class="fab footer-icon fa-facebook-f"></i>
-        <i class="fab footer-icon fa-instagram"></i>
-        <i class="far footer-icon fa-envelope-open"></i>
+        <a class="fab footer-icon fa-twitter icon" href="https://twitter.com/home"></a>
+        <a class="fab footer-icon fa-facebook-f icon" href="https://www.facebook.com/NunchiBox/"></a>
+        <a class="fab footer-icon fa-instagram icon" href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
+        <a class="far footer-icon fa-envelope-open icon" href="mailto:nunchibox.info@gmail.com"></a>
         <p>© Copyright 2020 Nunchi</p>
-
     </footer>
 </body>
 

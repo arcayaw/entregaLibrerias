@@ -1,7 +1,22 @@
-/*-- 
-font-family: 'Merienda', cursive;
-font-family: 'Space Mono', monospace; 
---*/
+*-- font-family: 'Merienda',
+cursive;
+font-family: 'Space Mono',
+monospace;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** 1rem = 10px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
 
 body {
     background-color: #FBEEEC;
@@ -11,61 +26,62 @@ body {
 }
 
 .newsBar {
-
     background-color: #AA7680;
     width: 100%;
-    height: 40px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding: 0%;
 }
 
 .promoBar {
-
     background-color: #D6B0B0;
     width: 100%;
-    height: 40px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0%;
 
 }
 
 .barText {
-
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+    .barText {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
 }
 
 
 .logo {
     display: flex;
-    width: 70%;
-    height: 100px;
-    margin-left: 15rem;
-    margin-right: 15%;
+    height: 150px;
+    margin-right: 5rem;
+    padding: 0;
+
 }
 
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 2%;
-}
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: 80%;
-    margin-top: 5px;
-    margin-left: 5rem;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 
@@ -75,14 +91,14 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    align-items: center;
 
 }
 
 .navItems {
     display: flex;
     flex-direction: row;
-    margin-left: 5px;
-    padding: 5px;
+    padding: 1rem;
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -91,6 +107,8 @@ nav ul {
     text-decoration: none;
     color: #777777;
 }
+
+
 
 a:hover {
 
@@ -107,14 +125,62 @@ h1 {
     text-align: center;
 }
 
+@media (max-width: 500px) {
+    nav {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: space-around;
+    }
+
+    a:hover {
+
+        transition: all 0.5s;
+        text-decoration: underline;
+        color: #AA7680;
+
+    }
+
+    .logo {
+        height: 100px;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .menuBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+}
+
+
 .hero {
     text-align: center;
-    padding: 30px;
+    padding-top: 3rem;
+    width: 100%;
+    height: 70vw;
+}
+
+.hero img {
+    width: 100%;
+    height: 70%vh;
 }
 
 .container {
-    display: flex;
-    width: 63%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    /* width: 63%; */
     text-align: center;
     margin: 0 auto;
     padding: 5px 70px;
@@ -126,7 +192,7 @@ h3 {
     font-size: 1.3rem;
     margin: 5px;
     text-align: center;
-    padding: 3rem 0;
+    padding: 0;
 }
 
 .text {
@@ -139,6 +205,31 @@ h3 {
 }
 
 
+
+
+@media (max-width:500px) {
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        /* width: 63%; */
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px 70px;
+    }
+
+    h3 {
+        padding: 0.1rem 0;
+    }
+
+    .text {
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+}
+
+
+
 .clientesContainer {
 
     display: grid;
@@ -149,14 +240,26 @@ h3 {
     padding: 0;
 }
 
+
+
 .cliente {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     margin: 0 auto;
-    padding: 0;
+    padding: 2rem 0;
+}
+
+@media (max-width:500px) {
+    .cliente {
+        margin: 1rem auto;
+        padding: 0;
+        width: 70%;
+        height: 70%;
+    }
+
 }
 
 
@@ -168,7 +271,9 @@ h3 {
     column-gap: 2rem;
     width: 80%;
     height: 100%;
-    margin: 0 auto;
+    margin: 0rem auto;
+    padding-top: 3rem;
+
 }
 
 .producto {
@@ -180,6 +285,7 @@ h3 {
     margin: 0 auto;
     width: 20rem;
     height: 20rem;
+    padding-bottom: 1rem;
 }
 
 .nameProduct {
@@ -189,6 +295,7 @@ h3 {
     font-weight: bold;
     text-transform: uppercase;
     color: #777777;
+
 }
 
 .priceProduct {
@@ -198,6 +305,8 @@ h3 {
     text-transform: uppercase;
     text-decoration: none;
     color: #AF9B5F;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .btnComprar {
@@ -209,23 +318,139 @@ h3 {
     background-color: #AA7680;
     border: none;
     color: white;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     text-transform: uppercase;
+    border-radius: 8px;
 
 }
 
 .btnComprar:hover {
-    transition: all 0.2s;
+    transition: all 0.5s;
     background-color: #AF9B5F;
+}
+
+@media (max-width:500px) {
+    .builtBoxContainer {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+.newBoxContainer {
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+    grid-template-columns: 3fr 3fr;
+    text-align: center;
+    column-gap: 2rem;
+    width: 80%;
+    height: 100%;
+    margin: 0rem auto;
+    padding: 3rem 0;
+}
+
+.desayunos {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr;
+    column-gap: 2rem;
+    width: 80%;
+    /* height: 100%; */
+    margin: 3rem auto;
+    padding: 3rem 0;
+    border-style: groove;
+
+}
+
+.bebidas {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr;
+    column-gap: 2rem;
+    width: 80%;
+    /* height: 100%; */
+    margin: 3rem auto;
+    padding: 1rem 0;
+    border-style: groove;
+}
+
+.golosinas {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr;
+    column-gap: 2rem;
+    width: 80%;
+    /* height: 100%; */
+    margin: 3rem auto;
+    padding: 1rem 0;
+    border-style: groove;
+}
+
+.varios {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr;
+    column-gap: 2rem;
+    width: 80%;
+    /* height: 100%; */
+    margin: 3rem auto;
+    padding: 1rem 0;
+    border-style: groove;
+}
+
+.agregar {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.btnAgregar {
+    display: flex;
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+    margin: 0.3rem;
+    background-color: #AA7680;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+@media (max-width:500px) {
+    .newBoxContainer {
+        display: grid;
+        grid-template-rows: 6fr;
+        grid-template-columns: 6fr;
+        text-align: center;
+        column-gap: 2rem;
+        width: 80%;
+        height: 100%;
+        margin: 0rem auto;
+        padding: 3rem 0;
+    }
+
+    .verticalAlign {
+        display: flex;
+        justify-content: center;
+        height: 30%;
+        align-items: center;
+    }
+
 }
 
 .map {
 
     width: 800px;
     height: 450px;
-    border: 0;
-    margin: 0 auto;
+    border: solid;
+    border-style: groove;
+    margin: 2rem auto;
 }
 
 iframe {
@@ -246,7 +471,7 @@ fieldset {
 }
 
 input {
-    size: 90%;
+
     width: 100%;
     height: 2rem;
 }
@@ -258,9 +483,49 @@ textarea {
 
 }
 
+.espacioInterno {
+    margin: 0.3rem auto;
+    padding-left: 1rem;
+}
+
 .enviarButton {
-    width: 60%;
-    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.enviar {
+    background-color: #AA7680;
+    border: none;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 500px) {
+    .contactoTitle {
+        padding-top: 2rem;
+    }
+
+    .map {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .form {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    fieldset {
+        width: 90%;
+    }
 
 }
 
@@ -327,8 +592,8 @@ textarea {
 
 .workInProgressImg {
     display: flex;
-    width: 40rem;
-    height: 30rem;
+    width: 10rem;
+    height: 10rem;
     margin: 0 auto;
 }
 
@@ -340,12 +605,93 @@ textarea {
 
 }
 
+.faqContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+.faqTittle {
+    text-align: left;
+}
+
+.faqTittle:first-child {
+    padding-top: 3rem;
+}
+
+.desplegar {
+    color: #AA7680;
+    margin-left: 1rem;
+}
+
+
+.faqContent {
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto;
+    color: #777777;
+}
+
+@media (max-width:500px) {
+    .faqTittle {
+        text-align: center;
+    }
+}
+
+.whap {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
 
 footer {
     background-color: #AA7680;
     text-align: center;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     margin-top: 5rem;
     padding-top: 1.5rem;
+}
+
+footer a {
+    color: white;
+    font-family: 'Sofia Pro', sans-serif;
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+footer p {
+    color: white;
+    font-family: 'Sofia Pro', sans-serif;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.icon:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 3s;
+}
+
+@media (max-width: 500px) {
+    footer {
+        margin-top: 3rem;
+    }
 }
