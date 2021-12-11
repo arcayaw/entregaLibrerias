@@ -305,7 +305,7 @@ h3 {
     text-transform: uppercase;
     text-decoration: none;
     color: #AF9B5F;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     padding-top: 1rem;
 }
 
@@ -356,11 +356,11 @@ h3 {
     display: grid;
     grid-template-columns: 6fr 6fr;
     grid-template-rows: 6fr 6fr;
-    column-gap: 2rem;
-    width: 80%;
+    column-gap: 0.5rem;
+    width: 94%;
     /* height: 100%; */
     margin: 3rem auto;
-    padding: 3rem 0;
+    padding: 1rem 0;
     border-style: groove;
 
 }
@@ -369,8 +369,8 @@ h3 {
     display: grid;
     grid-template-columns: 6fr 6fr;
     grid-template-rows: 6fr 6fr;
-    column-gap: 2rem;
-    width: 80%;
+    column-gap: 0.5rem;
+    width: 94%;
     /* height: 100%; */
     margin: 3rem auto;
     padding: 1rem 0;
@@ -381,8 +381,8 @@ h3 {
     display: grid;
     grid-template-columns: 6fr 6fr;
     grid-template-rows: 6fr 6fr;
-    column-gap: 2rem;
-    width: 80%;
+    column-gap: 0.5rem;
+    width: 94%;
     /* height: 100%; */
     margin: 3rem auto;
     padding: 1rem 0;
@@ -393,8 +393,8 @@ h3 {
     display: grid;
     grid-template-columns: 6fr 6fr;
     grid-template-rows: 6fr 6fr;
-    column-gap: 2rem;
-    width: 80%;
+    column-gap: 0.5rem;
+    width: 94%;
     /* height: 100%; */
     margin: 3rem auto;
     padding: 1rem 0;
@@ -406,8 +406,13 @@ h3 {
     width: 100%;
     text-align: center;
     justify-content: center;
+    margin-bottom: 1rem;
 
 
+}
+
+.boxImg {
+    margin: ;
 }
 
 .btnAgregar {
@@ -421,6 +426,13 @@ h3 {
     color: white;
     border-radius: 2px;
 }
+
+/* .verticalAlign {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    align-items: center;
+} */
 
 @media (max-width:500px) {
     .newBoxContainer {
@@ -447,7 +459,7 @@ h3 {
 .map {
 
     width: 800px;
-    height: 450px;
+    height: 500px;
     border: solid;
     border-style: groove;
     margin: 2rem auto;
@@ -567,43 +579,11 @@ textarea {
 
 
 
-.listaCajas {
-    padding: 9rem 0;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
 
-}
 
-.listaCajas li {
-    text-decoration: none;
-    background-color: royalblue;
-    text-align: center;
-    list-style: none;
-}
 
-.workInProgressContainer {
-    width: 70%;
-    height: 60%;
-    margin: 0 auto;
 
-}
 
-.workInProgressImg {
-    display: flex;
-    width: 10rem;
-    height: 10rem;
-    margin: 0 auto;
-}
-
-.workInProgressTxt {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin: 2rem auto;
-
-}
 
 .faqContainer {
     width: 80%;
