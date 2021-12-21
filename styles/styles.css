@@ -279,7 +279,7 @@ h3 {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
-    width: 60%;
+    width: 90%;
     height: 100%;
     margin: 0rem auto;
     padding-top: 3rem;
@@ -822,6 +822,7 @@ footer p {
 
 }
 
+
 .bar_text_size {
     font-size: 100%;
 }
@@ -846,4 +847,10 @@ footer p {
         opacity: 0;
     }
 
+}
+
+@media (max-width:390px) {
+    .h1Transform:hover {
+        font-size: 100%;
+    }
 }
