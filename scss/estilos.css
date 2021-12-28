@@ -1,0 +1,170 @@
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+@media (max-width: 576px) {
+  nav .logo {
+    text-align: center;
+    margin-left: auto;
+  }
+  .navbar__sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  a {
+    margin: 1rem 0;
+  }
+  .navitem__color:hover {
+    color: #AA7680;
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h5 {
+    text-align: center;
+  }
+  .cliente {
+    width: 100px;
+    height: 50px;
+    margin: 0 3rem;
+  }
+  div a:last-child {
+    margin-left: 1.3rem;
+    margin-right: 2rem;
+  }
+}
+
+/*-- reset --*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /** 1rem = 10px **/
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/*-- Globales --*/
+.container-fluid {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body {
+  font-family: 'Sofia Pro', sans-serif;
+}
+
+/*-- Barras --*/
+.newsbar {
+  height: 2rem;
+  background-color: #AA7680;
+}
+
+.promobar {
+  height: 2rem;
+  background-color: #D6B0B0;
+}
+
+/*-- navbar --*/
+nav {
+  background-color: #FBEEEC;
+}
+
+nav .logo {
+  margin-left: 15rem;
+  width: 20rem;
+}
+
+nav .navitem__color {
+  color: #777777;
+  font-family: 'sofia-pro', sans-serif;
+}
+
+nav a:hover {
+  color: #AA7680;
+  text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/*-- carousel --*/
+.containerCarousel {
+  background-color: #FBEEEC;
+}
+
+.containerCarousel h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 5rem;
+  color: #AF9B5F;
+  text-align: center;
+}
+
+.hero {
+  padding-bottom: 5rem;
+  background-color: #FBEEEC;
+}
+
+/*-- cards --*/
+.cardsContainer {
+  background-color: #FBEEEC;
+}
+
+.cardsContainer div {
+  background-color: #FBEEEC;
+}
+
+.cardsContainer div h5 {
+  color: #777777;
+}
+
+.cardsContainer div p {
+  color: #777777;
+}
+
+/*-- clientes --*/
+.clientesContainer {
+  background-color: #FBEEEC;
+}
+
+.clientesContainer h3 {
+  color: #777777;
+}
+
+/*-- Footer --*/
+footer {
+  background-color: #D6B0B0;
+}
+
+.suscribir__color {
+  background-color: #AA7680;
+}
+
+/*-- Whatssap Icon  --*/
+.whap {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 80px;
+  right: 15px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+/*# sourceMappingURL=estilos.css.map */

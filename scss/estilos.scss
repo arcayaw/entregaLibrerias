@@ -1,0 +1,303 @@
+@import "var";
+@import "wsp";
+
+
+/*-- reset --*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** 1rem = 10px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/*-- Globales --*/
+
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body {
+    font-family: 'Sofia Pro', sans-serif;
+    background-color: $colorPrincipal;
+}
+
+/*-- Barras --*/
+
+
+.newsbar {
+    height: 2rem;
+    background-color: $colorSecundario;
+}
+
+.promobar {
+    height: 2rem;
+    background-color: $colorTerceario;
+}
+
+/*-- navbar --*/ 
+
+nav{
+    background-color: $colorPrincipal;
+
+    .logo{
+        margin-left: 15rem;
+        width: 20rem;
+
+
+    }
+
+    .navitem__color {
+        color: $colorLetras;
+        font-family: 'sofia-pro', sans-serif;
+    }
+
+    a:hover{
+        color: $colorSecundario;
+        text-decoration: underline;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+
+
+.containerCarousel{
+    background-color: $colorPrincipal;
+
+    h1{
+        font-family: 'Merienda', cursive;
+        font-size: 5rem;
+        color: $colorDorado;
+        text-align: center;
+    }
+}
+
+    .hero{
+        padding-bottom: 5rem;
+        background-color: $colorPrincipal;
+    }
+
+
+.cardsContainer{
+
+    background-color: $colorPrincipal;
+
+    div{
+        background-color: $colorPrincipal;
+
+        h5{
+            color: $colorLetras;
+        }
+
+        p{
+            color: $colorLetras;
+        }
+    }
+    
+
+}
+
+/*-- clientes --*/
+
+.clientesContainer{
+
+    background-color: $colorPrincipal;
+
+    h3{
+        color: $colorLetras;
+    }
+}
+
+/*-- BOX presdisenadas --*/
+
+.builtBoxContainer{
+    
+        background-color: $colorPrincipal;
+        h1{
+            font-family: 'Merienda', cursive;
+        font-size: 5rem;
+        color: $colorDorado;
+        text-align: center;
+        }
+    
+}
+
+.anotherContainer{
+    background-color: $colorPrincipal;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.card-body{
+    background-color: $colorPrincipal;
+
+    h5{
+        color: $colorLetras;
+       
+    }
+    p{
+        color: $colorDorado;
+        
+    }
+    a{
+        background-color: $colorSecundario;
+    }
+
+}
+
+.boxUno:hover{
+    background-image: url(../images/nunchi-Lucia.jpg);
+}
+
+/*-- Box personalizada --*/
+.containerPersonalizadas{
+    background-color: $colorPrincipal;
+
+    h1{
+        font-family: 'Merienda', cursive;
+    font-size: 5rem;
+    color: $colorDorado;
+    text-align: center;
+    }
+
+}
+
+button i, span{
+    color: $colorSecundario;
+}
+/*-- Footer --*/
+
+footer{
+    background-color: $colorTerceario;
+  }
+ 
+
+
+.suscribir__color {
+    background-color: $colorSecundario;
+}
+
+h1{
+    font-family: 'Merienda', cursive;
+font-size: 5rem;
+color: $colorDorado;
+text-align: center;
+}
+
+.contactoTitle{
+    color: $colorLetras;
+}
+
+.containerMap{
+
+    width: 90rem;
+    height: 70rem;
+    margin-bottom: 3rem;
+    overflow:initial;   
+    
+    
+
+    .map{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+/*-- faq  --*/
+
+// .acordion{
+//     .accordion-button{
+//         color: $colorLetras !important;
+//     }
+
+
+// }
+
+// .accordion-button.collapsed {
+//     color: white;
+//     background: $colorTerceario;
+// }
+
+.acordion-header{
+    background-color: $colorSecundario;
+}
+
+
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    img.logo {
+        padding: 0;
+  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar__sm {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    a {
+        margin: 1rem 0;
+    }
+
+    .navitem__color:hover {
+        color: #AA7680;
+        text-decoration: underline;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .cliente {
+        width: 100px;
+        height: 50px;
+        margin: 0 3rem;
+    }
+
+
+    div a:last-child {
+        margin-left: 1.3rem;
+        margin-right: 2rem;
+    }
+
+    .anotherContainer{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .containerMap{
+        width: 80%;
+        padding: 0;
+    }
+
+    .contactoTitle{
+        margin-bottom: 2rem;
+    }
+    
+    .acordion{
+        width: 90%;
+    }
+}
+
+

@@ -1,0 +1,190 @@
+/*-- Whatssap Icon  --*/
+.whap {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 80px;
+  right: 15px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+
+/*-- reset --*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** 1rem = 10px **/ }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+/*-- Globales --*/
+.container-fluid {
+  margin-left: 0;
+  margin-right: 0; }
+
+body {
+  font-family: 'Sofia Pro', sans-serif;
+  background-color: #FBEEEC; }
+
+/*-- Barras --*/
+.newsbar {
+  height: 2rem;
+  background-color: #AA7680; }
+
+.promobar {
+  height: 2rem;
+  background-color: #D6B0B0; }
+
+/*-- navbar --*/
+nav {
+  background-color: #FBEEEC; }
+  nav .logo {
+    margin-left: 15rem;
+    width: 20rem; }
+  nav .navitem__color {
+    color: #777777;
+    font-family: 'sofia-pro', sans-serif; }
+  nav a:hover {
+    color: #AA7680;
+    text-decoration: underline; }
+  nav a {
+    text-decoration: none; }
+
+.containerCarousel {
+  background-color: #FBEEEC; }
+  .containerCarousel h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 5rem;
+    color: #AF9B5F;
+    text-align: center; }
+
+.hero {
+  padding-bottom: 5rem;
+  background-color: #FBEEEC; }
+
+.cardsContainer {
+  background-color: #FBEEEC; }
+  .cardsContainer div {
+    background-color: #FBEEEC; }
+    .cardsContainer div h5 {
+      color: #777777; }
+    .cardsContainer div p {
+      color: #777777; }
+
+/*-- clientes --*/
+.clientesContainer {
+  background-color: #FBEEEC; }
+  .clientesContainer h3 {
+    color: #777777; }
+
+/*-- BOX presdisenadas --*/
+.builtBoxContainer {
+  background-color: #FBEEEC; }
+  .builtBoxContainer h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 5rem;
+    color: #AF9B5F;
+    text-align: center; }
+
+.anotherContainer {
+  background-color: #FBEEEC;
+  max-width: 80%;
+  margin: 0 auto; }
+
+.card-body {
+  background-color: #FBEEEC; }
+  .card-body h5 {
+    color: #777777; }
+  .card-body p {
+    color: #AF9B5F; }
+  .card-body a {
+    background-color: #AA7680; }
+
+.boxUno:hover {
+  background-image: url(../images/nunchi-Lucia.jpg); }
+
+/*-- Box personalizada --*/
+.containerPersonalizadas {
+  background-color: #FBEEEC; }
+  .containerPersonalizadas h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 5rem;
+    color: #AF9B5F;
+    text-align: center; }
+
+button i, span {
+  color: #AA7680; }
+
+/*-- Footer --*/
+footer {
+  background-color: #D6B0B0; }
+
+.suscribir__color {
+  background-color: #AA7680; }
+
+h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 5rem;
+  color: #AF9B5F;
+  text-align: center; }
+
+.contactoTitle {
+  color: #777777; }
+
+.containerMap {
+  width: 90rem;
+  height: 70rem;
+  margin-bottom: 3rem;
+  overflow: initial; }
+  .containerMap .map {
+    width: 100%;
+    height: 100%; }
+
+/*-- faq  --*/
+.acordion-header {
+  background-color: #AA7680; }
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+@media (max-width: 576px) {
+  img.logo {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  .navbar__sm {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  a {
+    margin: 1rem 0; }
+  .navitem__color:hover {
+    color: #AA7680;
+    text-decoration: underline; }
+  h5 {
+    text-align: center; }
+  .cliente {
+    width: 100px;
+    height: 50px;
+    margin: 0 3rem; }
+  div a:last-child {
+    margin-left: 1.3rem;
+    margin-right: 2rem; }
+  .anotherContainer {
+    max-width: 70%;
+    margin: 0 auto; }
+  .containerMap {
+    width: 80%;
+    padding: 0; }
+  .contactoTitle {
+    margin-bottom: 2rem; }
+  .acordion {
+    width: 90%; } }

@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d3fce60580.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/iwl2qzk.css">
+
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,171 +22,321 @@
         href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
-    <!-- Favicon   -->
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-
     <!-- Animated CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- fonts 2 -->
+
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+
+    <!-- Favicon   -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!-- personal Styles -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="../css/estilos.css">
 
     <title>Nunchi</title>
 </head>
 
 <body>
     <header>
-        <div class="newsBar">
-            <p class="barText animate__animated animate__pulse">la
+        <div class="container-fluid  newsbar color_secundario d-flex justify-content-center text-uppercase text-light">
+            <p class=" animate__animated animate__pulse align-middle m-0 fs-4">la
                 navidad esta acá | envios
                 gratis a partir de $7000
             </p>
         </div>
-
-        <div class="promoBar">
-            <p class="barText">Promociones</p>
+        <div class=" container-fluid promobar color_terceario d-flex justify-content-center text-uppercase text-light">
+            <p class="align-middle m-0 fs-4">Promociones</p>
         </div>
 
+        <!-- NavBar -->
 
-        <nav>
-            <ul class="menuBox">
-                <a href="../index.html">
-                    <img class="logo" src="../images/LogoBlack.svg" alt=" Nunchi Logo">
+        <nav class="navbar navbar-expand-lg navbar-light color_primario">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/LogoGold.svg" width="200rem" height="200rem"
+                        class="logo d-inline-block align-top" alt="Logo Nunchi">
                 </a>
-                <li><a class="navItems" href="../index.html">Home</a></li>
-                <li><a class="navItems" href="./builtdBox.html">Box prediseñadas</a></li>
-                <li><a class="navItems" href="./newBox.html">Construye tu Box</a></li>
-                <li><a class="navItems" href="./faq.html">FAQ</a></li>
-                <li><a class="navItems" href="./contacto.html">Contacto</a> </li>
-                <li><a class="navItems" href="./animaciones.html">Animaciones</a> </li>
-            </ul>
-        </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse navbar__sm" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto ">
+                        <a class="nav-item  navitem__color fs-2 px-3 ps-0 text-uppercase" href="../index.html">Home
+                            <span class="sr-only">(current)</span></a>
+                        <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="./builtdBox.html">Box
+                            Prediseñadas</a>
+                        <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="./newBox.html">Construye
+                            tu Box</a>
+                        <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="faq.html">FAQs</a>
+                        <a class="nav-item navitem__color  fs-2 px-3 pe-0 text-uppercase"
+                            href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <h1>Box Personalizadas </h1>
 
-        <div class="faqContainer">
+    <!--Faq container -->
 
-            <div>
-                <h3 class="faqTittle">¿Hacen entregas fuera de CABA (Provincia de Buenos Aires)?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">What good is money if it can't inspire terror in your fellow man? And here I am
+    <div class=" container-fluid">
+        <h1 class=" display-1 pb-0 mb-0  text-lg-center">Box Personalizadas </h1>
+    </div>
+
+    <div class=" accordion accordion-flush w-75 mx-auto py-5" id="accordionExample">
+        <div>
+            <h3 class="contactoTitle fs-1 fw-light text-uppercase text-center ">Preguntas más frecuentes</h3>
+        </div>
+        <div class="accordion-item ">
+            <h2 class="accordion-header bg-danger" id="headingOne">
+                <button class="accordion-button color_secundario contactoTitle fs-2 " type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    ¿Hacen entregas fuera de CABA (Provincia de Buenos Aires)?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body contactoTitle fs-3 fw-light ps-4">
+                    <strong>Si hacemos</strong> What good is money if it can't inspire terror in your fellow man? And
+                    here I am
                     using my own lungs
                     like a
                     sucker. Marge, just about everything's a sin. Y'ever sat down and read this thing? Technically we're
                     not
-                    supposed to go to the bathroom.</p>
+                    supposed to go to the bathroom.
+                </div>
             </div>
-            <hr>
-
-            <div>
-                <h3 class="faqTittle">Me recolgué y necesito un regalo de un día para el otro ¿Es posible?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">I've had it with this school, Skinner. Low test scores, class after class of ugly,
-                    ugly children…
-                    Last
-                    night's "Itchy and Scratchy Show" was, without a doubt, the worst episode *ever.* Rest assured, I
-                    was on
-                    the Internet within minutes, registering my disgust throughout the world.</p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">¿Cómo puedo pagar por la box?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">It's only a model. Bring her forward! Who's that then? …Are you suggesting that
-                    coconuts migrate?</p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">¿En qué horario llegará mi box?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">Bloody Peasant! Ah, now we see the violence inherent in the system! Burn her
-                    anyway! She looks like
-                    one.
-                    On second thoughts, let's not go there. It is a silly place.</p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">¿Cuánto tiempo antes debo pedir mi box?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">Burn her! Shh! Knights, I bid you welcome to your new home. Let us ride to
-                    Camelot! It's only a
-                    model.
-                    What a strange person. She looks like one.</p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">¿Hacen entregas fuera de CABA (Provincia)?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">Oh, you're a dollar naughtier than most. Ven ve voke up, ve had zese wodies. Large
-                    bet on myself in
-                    round one. Fry, you can't just sit here in the dark listening to classical music. I love you, buddy!
-                </p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">Me recolgué y necesito un regalo de un día para el otro ¿Es posible?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">Would you censor the Venus de Venus just because you can see her spewers? Tell her
-                    you just want to
-                    talk. It has nothing to do with mating. Incidentally, you have a dime up your nose. What are their
-                    names?</p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">¿Cómo puedo pagar por mi regalo?<i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">That's my family Kay, that's not me. You can act like a man! I'm gonna make him an
-                    offer he can't
-                    refuse. Mr Corleone is Johnny Fontane's godfather. Now Italians regard that as a very close, a very
-                    sacred religious relationship. I know it was you, Fredo. You broke my heart. You broke my heart!</p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">¿En qué horario llegará el pedido?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">
-                    Only don't tell me you're innocent. Because it insults my intelligence and makes me very angry.</p>
-            </div>
-
-            <hr>
-            <div>
-                <h3 class="faqTittle">¿El envío tiene algún cargo?
-                    <i class="fas fa-chevron-down desplegar"></i>
-                </h3>
-                <p class="faqContent">This one time, this one time I'll let you ask me about my affairs. Friends and
-                    money - oil and water.
-                    The hotel, the casino. The Corleone Family wants to buy you out. Te salut, Don Corleone.</p>
-            </div>
-
         </div>
 
-    </main>
-    <footer>
-        <a class="fab footer-icon fa-twitter icon" href="https://twitter.com/home"></a>
-        <a class="fab footer-icon fa-facebook-f icon" href="https://www.facebook.com/NunchiBox/"></a>
-        <a class="fab footer-icon fa-instagram icon" href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
-        <a class="far footer-icon fa-envelope-open icon" href="mailto:nunchibox.info@gmail.com"></a>
-        <p>© Copyright 2020 Nunchi</p>
-    </footer>
+
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed contactoTitle fs-2 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Me recolgué y necesito un regalo de un día para el otro ¿Es posible?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse color_primario" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>I've had it with this school, Skinner. Low test scores, class after class of ugly,
+                        ugly children…
+                        Last
+                        night's "Itchy and Scratchy Show" was, without a doubt, the worst episode *ever.* Rest assured,
+                        I
+                        was on
+                        the Internet within minutes, registering my disgust throughout the world.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cómo puedo pagar por la box?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>It's only a model. Bring her forward! Who's that then? …Are you suggesting that
+                        coconuts migrate</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿En qué horario llegará mi Box?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body  fs-3 fw-light contactoTitle">
+                    <p>Bloody Peasant! Ah, now we see the violence inherent in the system! Burn her
+                        anyway! She looks like
+                        one.
+                        On second thoughts, let's not go there. It is a silly place.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    ¿Cuánto tiempo antes debo pedir mi Box?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>Burn her! Shh! Knights, I bid you welcome to your new home. Let us ride to
+                        Camelot! It's only a
+                        model.
+                        What a strange person. She looks like one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    ¿Hacen entregas fuera de CABA (Provincia)?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>Oh, you're a dollar naughtier than most. Ven ve voke up, ve had zese wodies. Large
+                        bet on myself in
+                        round one. Fry, you can't just sit here in the dark listening to classical music. I love you,
+                        buddy!</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Me recolgué y necesito un regalo de un día para el otro ¿Es posible?
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>Would you censor the Venus de Venus just because you can see her spewers? Tell her
+                        you just want to
+                        talk. It has nothing to do with mating. Incidentally, you have a dime up your nose. What are
+                        their
+                        names</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    ¿Cómo puedo pagar por mi regalo?
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>That's my family Kay, that's not me. You can act like a man! I'm gonna make him an
+                        offer he can't
+                        refuse. Mr Corleone is Johnny Fontane's godfather. Now Italians regard that as a very close, a
+                        very
+                        sacred religious relationship. I know it was you, Fredo. You broke my heart. You broke my heart!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    ¿En qué horario llegará el pedido?
+                </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>Only don't tell me you're innocent. Because it insults my intelligence and makes me very
+                        angry.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    ¿El envío tiene algún cargo?
+                </button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-3 fw-light contactoTitle">
+                    <p>This one time, this one time I'll let you ask me about my affairs. Friends and
+                        money - oil and water.
+                        The hotel, the casino. The Corleone Family wants to buy you out. Te salut, Don Corleone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <a class="whap" href="https://api.whatsapp.com/send?phone=5491157175314" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <div class="">
+        <footer class="container-fluid pt-5 color_terceario ">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="nav flex-column ms-lg-5">
+                        <li class="nav-item mb-2"><a href="../index.html"
+                                class="nav-link p-0  fs-2 text-light fw-light">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href=".builtdBox.html"
+                                class="nav-link p-0  fs-2 text-light fw-light ">Box Prediseñadas</a></li>
+                        <li class="nav-item mb-2"><a href="./newBox.html"
+                                class="nav-link p-0 fs-2 text-light fw-light">Construye tu box</a></li>
+                        <li class="nav-item mb-2"><a href="faq.html"
+                                class="nav-link p-0  fs-2 text-light fw-light">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="./contacto.html"
+                                class="nav-link p-0  fs-2 text-light fw-light">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 offset-1">
+                    <form class="form__footer">
+                        <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
+                        <p class="fs-3 text-light fw-light">Recibe todas nuestras novedades</p>
+
+
+                        <div class="d-flex w-100 gap-2 subscribe">
+                            <label for="newsletter1" class="visually-hidden fs-3">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control fs-3 text__area "
+                                placeholder="Corrreo Electrónico">
+                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button"
+                                type="button">Subscribete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class=" container-fluid d-flex justify-content-between py-4 my-4 border-top color_secundario">
+                <p class="fs-3 ms-lg-5 text-light fw-light">&copy; Copyright 2021 Nunchi</p>
+                <ul class="list-unstyled d-flex">
+                    <a class="fab footer-icon fa-twitter icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
+                        href="https://twitter.com/home"></a>
+                    <a class="fab footer-icon fa-facebook-f icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
+                        href="https://www.facebook.com/NunchiBox/"></a>
+                    <a class="fab footer-icon fa-instagram icon mx-lg-4 ms-3 link-dark  text-light text-decoration-none fs-1"
+                        href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
+                    <a class="far footer-icon fa-envelope-open icon mx-lg-4 me-lg-5  link-dark text-light text-decoration-none fs-1"
+                        href="mailto:nunchibox.info@gmail.com"></a>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Bootsrap javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

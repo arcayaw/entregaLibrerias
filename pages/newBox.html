@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d3fce60580.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/iwl2qzk.css">
+
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,228 +22,635 @@
         href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
-    <!-- Favicon   -->
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-
     <!-- Animated CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- fonts 2 -->
+
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+
+    <!-- Favicon   -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
     <!-- personal Styles -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="../css/estilos.css">
 
     <title>Nunchi</title>
 </head>
 
 <body>
     <header>
-        <div class="newsBar">
-            <p class="barText animate__animated animate__pulse">la
+        <div class="container-fluid  newsbar color_secundario d-flex justify-content-center text-uppercase text-light">
+            <p class=" animate__animated animate__pulse align-middle m-0 fs-4">la
                 navidad esta acá | envios
                 gratis a partir de $7000
             </p>
         </div>
-
-        <div class="promoBar">
-            <p class="barText">Promociones</p>
+        <div class=" container-fluid promobar color_terceario d-flex justify-content-center text-uppercase text-light">
+            <p class="align-middle m-0 fs-4">Promociones</p>
         </div>
 
+        <!-- NavBar -->
 
-        <nav>
-            <ul class="menuBox">
-                <a href="../index.html">
-                    <img class="logo" src="../images/LogoBlack.svg" alt=" Nunchi Logo">
+        <nav class="navbar navbar-expand-lg navbar-light color_primario">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/LogoGold.svg" width="200rem" height="200rem"
+                        class="logo d-inline-block align-top" alt="Logo Nunchi">
                 </a>
-                <li><a class="navItems" href="../index.html">Home</a></li>
-                <li><a class="navItems" href="./builtdBox.html">Box prediseñadas</a></li>
-                <li><a class="navItems" href="./newBox.html">Construye tu Box</a></li>
-                <li><a class="navItems" href="./faq.html">FAQ</a></li>
-                <li><a class="navItems" href="./contacto.html">Contacto</a> </li>
-                <li><a class="navItems" href="./animaciones.html">Animaciones</a> </li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar__sm" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto ">
+                        <a class="nav-item  navitem__color fs-2 px-3 ps-0 text-uppercase" href="../index.html">Home
+                            <span class="sr-only">(current)</span></a>
+                        <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="./builtdBox.html">Box
+                            Prediseñadas</a>
+                        <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="newBox.html">Construye
+                            tu Box</a>
+                        <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="./faq.html">FAQs</a>
+                        <a class="nav-item navitem__color  fs-2 px-3 pe-0 text-uppercase"
+                            href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Box Personalizadas </h1>
-        <div class="newBoxContainer">
-
-            <div>
-                <h3>Desayunos</h3>
-                <div class="desayunos">
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Media Luna"></img>
-                        <p class="nameProduct verticalAlign">Media Luna</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Sandwich"></img>
-                        <p class="nameProduct verticalAlign">Sandwich</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Arepas"></img>
-                        <p class="nameProduct verticalAlign"> Arepas</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Desayuno Fitness"></img>
-                        <p class="nameProduct verticalAlign">Desayuno Fitness</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3>Bebidas Alcoholicas</h3>
-                <div class="bebidas">
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Felino Cabernet"></img>
-                        <p class="nameProduct verticalAlign">Felino Cabernet</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Absolut"></img>
-                        <p class="nameProduct verticalAlign">Absolut</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Jameson"></img>
-                        <p class="nameProduct verticalAlign">Jameson</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Tanqueray"></img>
-                        <p class="nameProduct verticalAlign">Tanqueray</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3>Golosinas</h3>
-                <div class="golosinas">
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="ferrero rocher"></img>
-                        <p class="nameProduct verticalAlign">ferrero rocher</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="hershey"></img>
-                        <p class="nameProduct verticalAlign">hershey</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Nutella"></img>
-                        <p class="nameProduct verticalAlign">Nutella</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Toblerone"></img>
-                        <p class="nameProduct verticalAlign">Toblerone</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h3>Varios</h3>
-                <div class="varios">
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Mate"></img>
-                        <p class="nameProduct verticalAlign">Mate</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Botella metalica"></img>
-                        <p class="nameProduct verticalAlign">Botella metalica</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="arreglo frutal"></img>
-                        <p class="nameProduct verticalAlign">arreglo frutal</p>
-                        <p class="priceProduct "> $500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="boxImg" src="https://placekitten.com/100/100" alt="Kit Spa"></img>
-                        <p class="nameProduct verticalAlign">Kit Spa</p>
-                        <p class="priceProduct">$500</p>
-                        <div class="agregar">
-                            <button class="btnAgregar">+</button>
-                            <button class="btnAgregar">-</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="container-fluid containerPersonalizadas">
+            <h1 class=" display-1 pb-0 mb-0  text-lg-center">Box Personalizadas </h1>
         </div>
+        <section class=" anotherContainer py-5">
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/330/330" class="card-img-top boxUno" alt="MediaLuna">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Medialuna</h5>
+                            <p class="card-text fs-3 text-center fw-light">$400</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/500/500" class="card-img-top box2" alt="Sandwich">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Sandwich</h5>
+                            <p class="card-text fs-3 text-center fw-light">$500</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/400/400" class="card-img-top" alt="Arepas">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Arepas</h5>
+                            <p class="card-text fs-3 text-center fw-light">$600</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  text-center h-100">
+                        <img src="https://placekitten.com/600/600" class="card-img-top" alt="Desayuno Fit">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Desayuno Fit</h5>
+                            <p class="card-text fs-3 text-center fw-light">$700</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  text-center h-100">
+                        <img src="https://placekitten.com/700/700" class="card-img-top" alt="Vino Rutini">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Vino Rutini</h5>
+                            <p class="card-text fs-3 text-center fw-light">$1500</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/350/350" class="card-img-top" alt="Absolut">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Absolut</h5>
+                            <p class="card-text fs-3 text-center fw-light">$2100</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/650/650" class="card-img-top" alt="Jameson">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Jameson</h5>
+                            <p class="card-text fs-3 text-center fw-light">$2800</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/450/450" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Tanqueray</h5>
+                            <p class="card-text fs-3 text-center fw-light">$1900</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/550/550" class="card-img-top" alt="Ferrero Rocher">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Ferrero Rocher</h5>
+                            <p class="card-text fs-3 text-center fw-light">$700</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- segunda tanda -->
+
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/950/950" class="card-img-top boxUno" alt="HERSHEY">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">HERSHEY</h5>
+                            <p class="card-text fs-3 text-center fw-light">$650</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/750/750" class="card-img-top box2" alt="NUTELLA">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">NUTELLA</h5>
+                            <p class="card-text fs-3 text-center fw-light">$1150</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/850/850" class="card-img-top" alt="TOBLERONE">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">TOBLERONE</h5>
+                            <p class="card-text fs-3 text-center fw-light">$900</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  text-center h-100">
+                        <img src="https://placekitten.com/200/200" class="card-img-top" alt="Mate">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Mate</h5>
+                            <p class="card-text fs-3 text-center fw-light">$650</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  text-center h-100">
+                        <img src="https://placekitten.com/1000/1000" class="card-img-top" alt="
+                        ARREGLO FRUTAL">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">
+                                ARREGLO FRUTAL</h5>
+                            <p class="card-text fs-3 text-center fw-light">$2500</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/1200/1200" class="card-img-top" alt="KIT SPA">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">KIT SPA</h5>
+                            <p class="card-text fs-3 text-center fw-light">$3500</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <img src="https://placekitten.com/1400/1400" class="card-img-top" alt="Botella metalica">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 fw-light text-center text-uppercase">Botella metalica</h5>
+                            <p class="card-text fs-3 text-center fw-light">$1500</p>
+                            <div class="btn-group" role=group>
+                                <button class="btn">
+                                    <i href="#" class="far fa-minus-square fs-3 "></i>
+                                </button>
+                                <button class="btn">
+                                    <span class="fs-3">0</span>
+                                </button>
+                                <button class="btn">
+                                    <i href="#" class="far fa-plus-square fs-3 "></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <div>
+            <h3>Desayunos</h3>
+            <div class="desayunos">
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Media Luna"></img>
+                    <p class="nameProduct verticalAlign">Media Luna</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Sandwich"></img>
+                    <p class="nameProduct verticalAlign">Sandwich</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Arepas"></img>
+                    <p class="nameProduct verticalAlign"> Arepas</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Desayuno Fitness"></img>
+                    <p class="nameProduct verticalAlign">Desayuno Fitness</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Bebidas Alcoholicas</h3>
+            <div class="bebidas">
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Felino Cabernet"></img>
+                    <p class="nameProduct verticalAlign">Felino Cabernet</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Absolut"></img>
+                    <p class="nameProduct verticalAlign">Absolut</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Jameson"></img>
+                    <p class="nameProduct verticalAlign">Jameson</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Tanqueray"></img>
+                    <p class="nameProduct verticalAlign">Tanqueray</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Golosinas</h3>
+            <div class="golosinas">
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="ferrero rocher"></img>
+                    <p class="nameProduct verticalAlign">ferrero rocher</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="hershey"></img>
+                    <p class="nameProduct verticalAlign">hershey</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Nutella"></img>
+                    <p class="nameProduct verticalAlign">Nutella</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Toblerone"></img>
+                    <p class="nameProduct verticalAlign">Toblerone</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Varios</h3>
+            <div class="varios">
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Mate"></img>
+                    <p class="nameProduct verticalAlign">Mate</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Botella metalica"></img>
+                    <p class="nameProduct verticalAlign">Botella metalica</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="arreglo frutal"></img>
+                    <p class="nameProduct verticalAlign">arreglo frutal</p>
+                    <p class="priceProduct "> $500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+                <div>
+                    <img class="boxImg" src="https://placekitten.com/100/100" alt="Kit Spa"></img>
+                    <p class="nameProduct verticalAlign">Kit Spa</p>
+                    <p class="priceProduct">$500</p>
+                    <div class="agregar">
+                        <button class="btnAgregar">+</button>
+                        <button class="btnAgregar">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div> -->
     </main>
-    <footer>
-        <a class="fab footer-icon fa-twitter icon" href="https://twitter.com/home"></a>
-        <a class="fab footer-icon fa-facebook-f icon" href="https://www.facebook.com/NunchiBox/"></a>
-        <a class="fab footer-icon fa-instagram icon" href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
-        <a class="far footer-icon fa-envelope-open icon" href="mailto:nunchibox.info@gmail.com"></a>
-        <p>© Copyright 2020 Nunchi</p>
-    </footer>
+    <!-- Footer -->
+
+    <a class="whap" href="https://api.whatsapp.com/send?phone=5491157175314" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <div class="">
+        <footer class="container-fluid pt-5 color_terceario ">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="nav flex-column ms-lg-5">
+                        <li class="nav-item mb-2"><a href="../index.html"
+                                class="nav-link p-0  fs-2 text-light fw-light">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="./builtdBox.html"
+                                class="nav-link p-0  fs-2 text-light fw-light ">Box Prediseñadas</a></li>
+                        <li class="nav-item mb-2"><a href="newBox.html"
+                                class="nav-link p-0 fs-2 text-light fw-light">Construye tu box</a></li>
+                        <li class="nav-item mb-2"><a href="./faq.html"
+                                class="nav-link p-0  fs-2 text-light fw-light">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="./contacto.html"
+                                class="nav-link p-0  fs-2 text-light fw-light">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4 offset-1">
+                    <form class="form__footer">
+                        <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
+                        <p class="fs-3 text-light fw-light">Recibe todas nuestras novedades</p>
+
+
+                        <div class="d-flex w-100 gap-2 subscribe">
+                            <label for="newsletter1" class="visually-hidden fs-3">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control fs-3 text__area "
+                                placeholder="Corrreo Electrónico">
+                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button"
+                                type="button">Subscribete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class=" container-fluid d-flex justify-content-between py-4 my-4 border-top color_secundario">
+                <p class="fs-3 ms-lg-5 text-light fw-light">&copy; Copyright 2021 Nunchi</p>
+                <ul class="list-unstyled d-flex">
+                    <a class="fab footer-icon fa-twitter icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
+                        href="https://twitter.com/home"></a>
+                    <a class="fab footer-icon fa-facebook-f icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
+                        href="https://www.facebook.com/NunchiBox/"></a>
+                    <a class="fab footer-icon fa-instagram icon mx-lg-4 ms-3 link-dark  text-light text-decoration-none fs-1"
+                        href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
+                    <a class="far footer-icon fa-envelope-open icon mx-lg-4 me-lg-5  link-dark text-light text-decoration-none fs-1"
+                        href="mailto:nunchibox.info@gmail.com"></a>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Bootsrap javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
