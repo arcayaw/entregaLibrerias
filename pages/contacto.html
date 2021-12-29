@@ -41,14 +41,14 @@
 
 <body>
     <header>
-        <div class="container-fluid  newsbar color_secundario d-flex justify-content-center text-uppercase text-light">
-            <p class=" animate__animated animate__pulse align-middle m-0 fs-4">la
+        <div class="container-fluid  newsbar  d-flex justify-content-center text-uppercase text-light">
+            <p class=" animate__animated animate__pulse align-middle m-0 text-center">la
                 navidad esta acá | envios
                 gratis a partir de $7000
             </p>
         </div>
-        <div class=" container-fluid promobar color_terceario d-flex justify-content-center text-uppercase text-light">
-            <p class="align-middle m-0 fs-4">Promociones</p>
+        <div class=" container-fluid promobar  d-flex justify-content-center text-uppercase text-light text-center">
+            <p class="align-middle m-0 text-center fs-4">Promociones</p>
         </div>
 
         <!-- NavBar -->
@@ -68,7 +68,7 @@
                 <div class="collapse navbar-collapse navbar__sm" id="navbarNavAltMarkup">
                     <div class="navbar-nav mx-auto ">
                         <a class="nav-item  navitem__color fs-2 px-3 ps-0 text-uppercase" href="../index.html">Home
-                            <span class="sr-only">(current)</span></a>
+                            <span class="sr-only"></span></a>
                         <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="./builtdBox.html">Box
                             Prediseñadas</a>
                         <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="./newBox.html">Construye
@@ -155,23 +155,24 @@
                 </div>
 
                 <div class="col-4 offset-1">
-                    <form class="form__footer">
+                    <form class="form__footer d-flex flex-column">
                         <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
                         <p class="fs-3 text-light fw-light">Recibe todas nuestras novedades</p>
 
 
-                        <div class="d-flex w-100 gap-2 subscribe">
-                            <label for="newsletter1" class="visually-hidden fs-3">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control fs-3 text__area "
+                        <div class="d-flex flex-column w-100 gap-2 subscribe">
+                            <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
+                            <input id="newsletter1" type="text" class="form-control fs-3 text__area  d-lg-block"
                                 placeholder="Corrreo Electrónico">
-                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button"
+                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
                                 type="button">Subscribete</button>
                         </div>
                     </form>
                 </div>
             </div>
 
-            <div class=" container-fluid d-flex justify-content-between py-4 my-4 border-top color_secundario">
+            <div
+                class=" container-fluid bottomBar d-flex justify-content-between w-100 py-4  mx-lg-0 my-4 border-top color_secundario">
                 <p class="fs-3 ms-lg-5 text-light fw-light">&copy; Copyright 2021 Nunchi</p>
                 <ul class="list-unstyled d-flex">
                     <a class="fab footer-icon fa-twitter icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"

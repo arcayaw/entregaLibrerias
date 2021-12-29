@@ -43,21 +43,21 @@
 <body>
     <header>
         <div class="container-fluid  newsbar d-flex justify-content-center text-uppercase text-light">
-            <p class=" animate__animated animate__pulse align-middle m-0 fs-4">la
-                navidad esta acá | envios
-                gratis a partir de $7000
+            <p class="animate__animated animate__pulse align-middle m-0 text-center">la
+                navidad esta acá | envios gratis a partir de $7000
             </p>
         </div>
         <div class=" container-fluid promobar d-flex justify-content-center text-uppercase text-light">
-            <p class="align-middle m-0 fs-4">Promociones</p>
+            <p class="align-middle text-center m-0 fs-4">Promociones</p>
         </div>
 
         <!-- NavBar -->
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light color_primario">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./images/LogoGold.svg" class="logo  align-top" alt="Logo Nunchi">
+                    <img src="./images/LogoGold.svg" width="200rem" height="200rem"
+                        class="logo d-inline-block align-top" alt="Logo Nunchi">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -68,7 +68,7 @@
                 <div class="collapse navbar-collapse navbar__sm" id="navbarNavAltMarkup">
                     <div class="navbar-nav mx-auto ">
                         <a class="nav-item  navitem__color fs-2 px-3 ps-0 text-uppercase" href="index.html">Home
-                            <span class="sr-only">(current)</span></a>
+                            <span class="sr-only"></span></a>
                         <a class="nav-item navitem__color  fs-2 px-3 text-uppercase" href="./pages/builtdBox.html">Box
                             Prediseñadas</a>
                         <a class="nav-item navitem__color  fs-2 px-3 text-uppercase"
@@ -203,7 +203,7 @@
             </div>
 
             <div><a href="https://www.accenture.com/us-en" target="_blank"><img
-                        class="cliente roemmers img-fluid mx-lg-5" src="./images/Acc_Logo_Black_Purple_RGB.png"
+                        class="cliente accenture img-fluid mx-lg-5" src="./images/Acc_Logo_Black_Purple_RGB.png"
                         alt="RoomersLogo" srcset=""></a>
             </div>
 
@@ -242,16 +242,16 @@
                 </div>
 
                 <div class="col-4 offset-1">
-                    <form class="form__footer">
+                    <form class="form__footer d-flex flex-column">
                         <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
                         <p class="fs-3 text-light fw-light">Recibe todas nuestras novedades</p>
 
 
-                        <div class="d-flex w-100 gap-2 subscribe">
-                            <label for="newsletter1" class="visually-hidden fs-3">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control fs-3 text__area "
+                        <div class="d-flex flex-column w-100 gap-2 subscribe">
+                            <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
+                            <input id="newsletter1" type="text" class="form-control fs-3 text__area  d-lg-block"
                                 placeholder="Corrreo Electrónico">
-                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button"
+                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
                                 type="button">Subscribete</button>
                         </div>
                     </form>

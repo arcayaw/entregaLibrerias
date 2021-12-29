@@ -36,11 +36,14 @@ body {
 .newsbar {
     height: 2rem;
     background-color: $colorSecundario;
+    font-size: 1.5rem;
+
 }
 
 .promobar {
     height: 2rem;
     background-color: $colorTerceario;
+    font-size: 1.5rem;
 }
 
 /*-- navbar --*/ 
@@ -146,7 +149,6 @@ nav{
 
     h5{
         color: $colorLetras;
-       
     }
     p{
         color: $colorDorado;
@@ -182,8 +184,8 @@ button i, span{
 
 footer{
     background-color: $colorTerceario;
-  }
- 
+}
+
 
 
 .suscribir__color {
@@ -243,11 +245,11 @@ text-align: center;
 
 @media (max-width: 576px) {
     img.logo {
-        padding: 0;
-  
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        margin-left: 11rem ;
+    }
+
+    .newsbar{
+        font-size: 3vw ;
     }
 
     .navbar__sm {
@@ -301,3 +303,28 @@ text-align: center;
 }
 
 
+@media (max-width: 390px) {
+
+
+    img.logo {
+        margin-left: 6rem ;
+    }
+
+
+    .cliente {
+        width: 100px;
+        height: 50px;
+        margin: 0 3rem;
+    }
+    
+    .glovo{
+        margin:0;
+    }
+    .accenture{
+        margin: 0.5rem;
+    }
+    .visa{
+        margin: 0;
+    }
+
+}    
