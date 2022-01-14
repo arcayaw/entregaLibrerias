@@ -1,40 +1,18 @@
-/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
-@media (max-width: 576px) {
-  nav .logo {
-    text-align: center;
-    margin-left: auto;
-  }
-  .navbar__sm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  a {
-    margin: 1rem 0;
-  }
-  .navitem__color:hover {
-    color: #AA7680;
-    text-decoration: underline;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h5 {
-    text-align: center;
-  }
-  .cliente {
-    width: 100px;
-    height: 50px;
-    margin: 0 3rem;
-  }
-  div a:last-child {
-    margin-left: 1.3rem;
-    margin-right: 2rem;
-  }
+/*-- Whatssap Icon  --*/
+.whap {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 80px;
+  right: 15px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
 /*-- reset --*/
@@ -62,17 +40,20 @@ html {
 
 body {
   font-family: 'Sofia Pro', sans-serif;
+  background-color: #FBEEEC;
 }
 
 /*-- Barras --*/
 .newsbar {
   height: 2rem;
   background-color: #AA7680;
+  font-size: 1.5rem;
 }
 
 .promobar {
   height: 2rem;
   background-color: #D6B0B0;
+  font-size: 1.5rem;
 }
 
 /*-- navbar --*/
@@ -99,7 +80,6 @@ nav a {
   text-decoration: none;
 }
 
-/*-- carousel --*/
 .containerCarousel {
   background-color: #FBEEEC;
 }
@@ -116,7 +96,6 @@ nav a {
   background-color: #FBEEEC;
 }
 
-/*-- cards --*/
 .cardsContainer {
   background-color: #FBEEEC;
 }
@@ -142,6 +121,60 @@ nav a {
   color: #777777;
 }
 
+/*-- BOX presdisenadas --*/
+.builtBoxContainer {
+  background-color: #FBEEEC;
+}
+
+.builtBoxContainer h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 5rem;
+  color: #AF9B5F;
+  text-align: center;
+}
+
+.anotherContainer {
+  background-color: #FBEEEC;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.card-body {
+  background-color: #FBEEEC;
+}
+
+.card-body h5 {
+  color: #777777;
+}
+
+.card-body p {
+  color: #AF9B5F;
+}
+
+.card-body a {
+  background-color: #AA7680;
+}
+
+.boxUno:hover {
+  background-image: url(../images/nunchi-Lucia.jpg);
+}
+
+/*-- Box personalizada --*/
+.containerPersonalizadas {
+  background-color: #FBEEEC;
+}
+
+.containerPersonalizadas h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 5rem;
+  color: #AF9B5F;
+  text-align: center;
+}
+
+button i, span {
+  color: #AA7680;
+}
+
 /*-- Footer --*/
 footer {
   background-color: #D6B0B0;
@@ -151,20 +184,103 @@ footer {
   background-color: #AA7680;
 }
 
-/*-- Whatssap Icon  --*/
-.whap {
-  position: fixed;
-  width: 4rem;
-  height: 4rem;
-  bottom: 80px;
-  right: 15px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
+h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 5rem;
+  color: #AF9B5F;
   text-align: center;
-  font-size: 30px;
-  -webkit-box-shadow: 2px 2px 3px #999;
-          box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+}
+
+.contactoTitle {
+  color: #777777;
+}
+
+.containerMap {
+  width: 90rem;
+  height: 70rem;
+  margin-bottom: 3rem;
+  overflow: initial;
+}
+
+.containerMap .map {
+  width: 100%;
+  height: 100%;
+}
+
+/*-- faq  --*/
+.acordion-header {
+  background-color: #AA7680;
+}
+
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+@media (max-width: 576px) {
+  img.logo {
+    margin-left: 11rem;
+  }
+  .newsbar {
+    font-size: 3vw;
+  }
+  .navbar__sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  a {
+    margin: 1rem 0;
+  }
+  .navitem__color:hover {
+    color: #AA7680;
+    text-decoration: underline;
+  }
+  h5 {
+    text-align: center;
+  }
+  .cliente {
+    width: 100px;
+    height: 50px;
+    margin: 0 3rem;
+  }
+  div a:last-child {
+    margin-left: 1.3rem;
+    margin-right: 2rem;
+  }
+  .anotherContainer {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .containerMap {
+    width: 80%;
+    padding: 0;
+  }
+  .contactoTitle {
+    margin-bottom: 2rem;
+  }
+  .acordion {
+    width: 90%;
+  }
+}
+
+@media (max-width: 390px) {
+  img.logo {
+    margin-left: 6rem;
+  }
+  .cliente {
+    width: 100px;
+    height: 50px;
+    margin: 0 3rem;
+  }
+  .glovo {
+    margin: 0;
+  }
+  .accenture {
+    margin: 0.5rem;
+  }
+  .visa {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

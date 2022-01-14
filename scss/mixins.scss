@@ -1,0 +1,56 @@
+
+
+$ancho: 4rem;
+
+@mixin cuadrado ($bg, $colorTexto:white) {   
+    width: 30rem;
+    height: 47rem;
+    margin: 3rem auto;
+    padding: $ancho;
+    border: 1px gray solid;
+    justify-content: center;
+    text-align: center;
+    background-color: $bg;
+    color: $colorTexto;
+    
+
+}
+
+.cuadrado1{
+    @include cuadrado(salmon);
+
+}
+
+.cuadrado1:hover{
+    background-color: white;
+    color: salmon
+}
+
+.cuadrado2{
+    @include cuadrado(seagreen, orange); 
+}
+
+.cuadrado2:hover{
+    background-color: orange;
+    color:seagreen
+}
+
+
+.cuadrado3{
+    @include cuadrado(cornflowerblue, black);
+
+}
+
+.cuadrado3:hover{
+    background-color: black;
+    color:cornflowerblue
+}
+
+@media (max-width: 576px) {
+    .cuadrado1, .cuadrado2, .cuadrado3, .cuadrado4, .cuadrado5, .cuadrado6 {
+        padding: $ancho/2;
+   
+    }
+}
+
+

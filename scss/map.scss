@@ -1,0 +1,33 @@
+
+
+.cuadrado{
+    width: 30rem;
+    height: 47rem;
+    margin: 3rem auto;
+    padding: $ancho;
+    border: 1px gray solid;
+    justify-content: center;
+    text-align: center;
+}
+
+$cajas:(
+    caja4: white,
+    caja5: red,
+    caja6: purple,
+);
+
+$caja4: map-get($cajas, caja4);
+$caja5: map-get($cajas, caja5);
+$caja6: map-get($cajas, caja6);
+
+.cuadrado4{
+    background-color: $caja4;
+}
+
+.cuadrado5{
+    background-color: $caja5;
+}
+
+.cuadrado6{
+    background-color: $caja6;
+}
