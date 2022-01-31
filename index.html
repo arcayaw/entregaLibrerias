@@ -7,11 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <meta name="description" content="Regalos personalizados para toda ocasión">
+    <meta name="description" content="Nunchi Box | Regalos personalizados para toda ocasión">
     <meta name="keywords"
-        content="regalo corporativo, Box de regalo, cumpleaños, aniversario, regalo spa, Regalo niños, regalo matrimonio, regalo bodas, regalo aniversario, regalo personalizado, regalos, regalos originales">
-
-
+        content="regalos corporativo, Box de regalo, cumpleaños, aniversario, regalo spa, Regalo niños, regalo matrimonio, regalo bodas, regalo aniversario, regalo personalizado, regalos, regalos originales">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d3fce60580.js" crossorigin="anonymous"></script>
@@ -55,112 +53,133 @@
             <p class="m-0 text-center align-middle fs-4">Promociones</p>
         </div>
 
-        <!-- NavBar -->
 
-        <nav class="navbar navbar-expand-lg navbar-light color_primario">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./images/LogoGold.svg" width="200rem" height="200rem"
-                        class="align-top logo d-inline-block" alt="Logo Nunchi">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+        <!-- NAVBAR NUEVA -->
+        <nav class="container pt-0 navbar navbar-expand-lg navbar-light color_primario d-flex">
+            <div class="container">
+
+                <!-- LOGO IMG -->
+                <a class="ps-lg-5 ms-lg-5 navbar-brand" href="index.html"><img src="./images/LogoGold.svg"
+                        width="200rem" height="200rem" class="navLogo" alt="logo nunchi"></a>
+
+                <!-- COLAPSED BUTTON -->
+                <a class="mb-0 align-self-center text-secondary d-lg-none display-2 font-monospace fw-lighter ms-5 animate__animated animate__pulse"
+                    href="index.html">
+                    <img src="./images/nuevologonunchi.png" class="logo__sm" style="width: 200px; height: 50px;"
+                        alt="logo Nunchi"></a>
+
+                <button class="mt-4 mb-3 navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse navbar__sm" id="navbarNavAltMarkup">
-                    <div class="mx-auto navbar-nav ">
-                        <a class="px-3 nav-item navitem__color fs-2 ps-0 text-uppercase" href="index.html">Home
-                            <span class="sr-only"></span></a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="./pages/builtdBox.html">Box
-                            Prediseñadas</a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="./pages/newBox.html">Construye
-                            tu Box</a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="./pages/faq.html">FAQs</a>
-                        <a class="px-3 nav-item navitem__color fs-2 pe-0 text-uppercase"
-                            href="./pages/contacto.html">Contacto</a>
-                        <a class="px-3 nav-item navitem__color fs-2 pe-0 text-uppercase"
-                            href="./pages/animaciones.html">SASS II</a>
-                    </div>
+                <!--NAV ITEMS -->
+                <div class="collapse navbar-collapse navbar__sm " id="navbarSupportedContent">
+                    <ul class="mb-2 align-self-center m-sm-auto navbar-nav mb-lg-0 justify-content-end">
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./pages/builtdBox.html">BOX PRESDISEÑADAS</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./pages/newBox.html">ARMA TU BOX</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./pages/faq.html">FAQ's</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./pages/aboutUs.html">NOSOTROS</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5 ">
+                            <a href="#"
+                                class="fas fa-shopping-cart text-decoration-none fs-1 text-dark mx-sm-0 cartIcon"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- carousel -->
 
-    <!-- Carousel -->
+    <section class="">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
 
-    <div class=" container-fluid containerCarousel">
-        <h1 class="pb-0 mb-0 display-1 text-lg-center">Box Personalizadas </h1>
-    </div>
 
+            <div class="carousel-inner">
 
-    <section class="pt-5 m-0 mx-auto container-fluid hero w-75 h-75">
-        <div class="">
-            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-interval="5000"
-                data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1">
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-current="true" aria-label="Slide 2">
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-current="true" aria-label="Slide 3">
-                    </button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/hero2-min.jpg" class=" d-block img-fluid" alt="Box home" title="Box home"
-                            style=height: 100%;>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/hero3-min.jpg" class="d-block img-fluid" alt="Box Rose" title="Box Rose">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/hero4-min.jpg" class="d-block img-fluid " alt="Box Chandon"
-                            title="Box Chandon">
+                <div class="carousel-item active box" data-bs-interval="5000">
+                    <img src="./images/hero4-min.jpg" class="d-block w-100" alt="Hero 2">
+                    <div class="text-white bg-opacity-25 bg-dark carousel-caption d-none d-md-block w-25">
+                        <h3 class="fs-1 ">Box de Regalo Personalizadas</h3>
+                        <p class="fs-3 ">Ideas para regalar</p>
                     </div>
                 </div>
 
-                <div class="w-auto h-auto ">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only text-dark">Previous</span>
-                    </button>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only text-dark">Next</span>
-                    </button>
+                <div class="carousel-item box" data-bs-interval="5000">
+                    <img src="./images/hero3-min.jpg" class="d-block w-100" alt="Hero 3">
+                    <div class="text-white bg-opacity-25 carousel-caption d-none d-md-block bg-dark w-25">
+                        <h3 class="fs-1">Box de Regalo Personalizadas</h3>
+                        <p class="fs-3">Ideas para regalar</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item box" data-bs-interval="5000">
+                    <img src=" ./images/hero2-min.jpg" class="d-block w-100" alt="Hero 4">
+                    <div class="text-white bg-opacity-25 carousel-caption d-none d-md-block bg-dark w-25">
+                        <h3 class="fs-1">Box de Regalo Personalizadas</h3>
+                        <p class="fs-3">Ideas para regalar</p>
+                    </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
+
     <!-- Cards -->
-    <section class="container-fluid cardsContainer">
+
+
+    <section class=" cardsContainer">
         <div class="container py-lg-5 py-md-5">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="h-100">
                         <div class="card-body color_primario">
-                            <h5 class="card-title cardtitle cardtitle__color text-lg-center fs-1 fw-light">¿Necesitas
+                            <h5 class="card-title cardtitle__color text-lg-center fs-1 fw-light">
+                                ¿Necesitas
                                 hacer un
                                 regalo?
                             </h5>
-                            <p class="text-center card-text cardtitle__color fs-3 fw-light">Lorem ipsum dolor, sit amet
-                                consectetur
-                                adipisicing elit.
-                                Voluptate
-                                itaque beatae laborum unde est
-                                distinctio commodi, doloribus vitae accusantium voluptates voluptas a, sequi sit,
-                                voluptatem
-                                cupiditate</p>
+                            <p class="text-center card-text cardtitle__color fs-3 fw-light">Nunchibox es más que una
+                                tienda de regalos, amamos tener la oportunidad de contar historias y regalar
+                                momentos a través de una Box única y original.</p>
                         </div>
                     </div>
                 </div>
@@ -170,13 +189,8 @@
                         <div class="card-body color_primario">
                             <h5 class="card-title cardtitle__color text-lg-center fs-1 fw-light">Personalizalo a tu
                                 gusto</h5>
-                            <p class="text-center card-tex cardtitle__color fs-3 fw-light">Lorem ipsum dolor, sit amet
-                                consectetur
-                                adipisicing elit. Voluptate
-                                itaque beatae laborum unde est
-                                distinctio commodi, doloribus vitae accusantium voluptates voluptas a, sequi sit,
-                                voluptatem
-                                cupiditate</p>
+                            <p class="text-center card-tex cardtitle__color fs-3 fw-light">Sorprende a esa persona
+                                con un detalle personalizado que de seguro le va a encantar.</p>
                         </div>
                     </div>
                 </div>
@@ -186,13 +200,9 @@
                         <div class="card-body color_primario">
                             <h5 class="card-title cardtitle__color text-lg-center fs-1 fw-light">Nosotros hacemos el
                                 resto</h5>
-                            <p class="text-center card-text cardtitle__color fs-3 fw-light"> Lorem ipsum dolor, sit amet
-                                consectetur
-                                adipisicing elit.
-                                Voluptate itaque beatae laborum unde est
-                                distinctio commodi, doloribus vitae accusantium voluptates voluptas a, sequi sit,
-                                voluptatem
-                                cupiditate</p>
+                            <p class="text-center card-text cardtitle__color fs-3 fw-light"> A partir de los
+                                elementos que escojas, armamos y entregamos la Box que diseñaste justo en el momento
+                                que la necesitas</p>
                         </div>
                     </div>
                 </div>
@@ -203,9 +213,10 @@
 
     <!-- Clientes -->
 
-    <section class="pb-5 mx-0 container-fluid w-100 clientesContainer">
+    <section class="pt-4 pb-5 container-fluid w-100 clientesContainer">
 
-        <h3 class="pb-4 text-center clientes__titulo fs-1 fw-light">Estas empresas ya confian en nosotros</h3>
+        <h3 class="pt-4 pb-4 text-center clientes__titulo fs-1 fw-light">Estas empresas ya confian en nosotros
+        </h3>
 
         <div class=" d-flex justify-content-lg-center">
 
@@ -233,58 +244,60 @@
         <i class="fa fa-whatsapp my-float"></i>
     </a>
 
-    <div class="">
-        <footer class="pt-5 container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    <ul class="nav flex-column ms-lg-5">
+    <footer class="pt-5 container-fluid">
+        <div class="row">
+            <div class="col-6 ">
+                <ul class="nav flex-column ms-lg-5 align-items-center">
+                    <ul class="nav flex-column ms-lg-5 align-items-center">
                         <li class="mb-2 nav-item"><a href="index.html"
                                 class="p-0 nav-link fs-2 text-light fw-light">Home</a>
                         </li>
                         <li class="mb-2 nav-item"><a href="./pages/builtdBox.html"
                                 class="p-0 nav-link fs-2 text-light fw-light ">Box Prediseñadas</a></li>
                         <li class="mb-2 nav-item"><a href="./pages/newBox.html"
-                                class="p-0 nav-link fs-2 text-light fw-light">Construye tu box</a></li>
+                                class="p-0 nav-link fs-2 text-light fw-light">Arma tu Box</a></li>
                         <li class="mb-2 nav-item"><a href="./pages/faq.html"
-                                class="p-0 nav-link fs-2 text-light fw-light">FAQs</a></li>
+                                class="p-0 nav-link fs-2 text-light fw-light">FAQ's</a></li>
                         <li class="mb-2 nav-item"><a href="./pages/contacto.html"
                                 class="p-0 nav-link fs-2 text-light fw-light">Contacto</a></li>
+                        <li class="mb-2 nav-item"><a href="./pages/aboutUs.html"
+                                class="p-0 nav-link fs-2 text-light fw-light">Nosotros</a></li>
                     </ul>
-                </div>
-
-                <div class="col-4 offset-1">
-                    <form class="form__footer d-flex flex-column">
-                        <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
-                        <p class="fs-3 text-light fw-light">Recibe todas nuestras novedades</p>
-
-
-                        <div class="gap-2 d-flex flex-column w-100 subscribe">
-                            <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
-                            <input id="newsletter1" type="text" class="form-control fs-3 text__area d-lg-block"
-                                placeholder="Corrreo Electrónico">
-                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
-                                type="button">Subscribete</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div
-                class="py-4 my-4 container-fluid bottomBar d-flex justify-content-between w-100 mx-lg-0 border-top color_secundario">
-                <p class="fs-3 ms-lg-5 text-light fw-light">&copy; Copyright 2021 Nunchi</p>
-                <ul class="list-unstyled d-flex">
-                    <a class="fab footer-icon fa-twitter icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://twitter.com/home"></a>
-                    <a class="fab footer-icon fa-facebook-f icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://www.facebook.com/NunchiBox/"></a>
-                    <a class="fab footer-icon fa-instagram icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
-                    <a class="far footer-icon fa-envelope-open icon mx-lg-4 me-lg-5 link-dark text-light text-decoration-none fs-1"
-                        href="mailto:nunchibox.info@gmail.com"></a>
                 </ul>
             </div>
-        </footer>
-    </div>
+
+            <div class="col-4 offset-1">
+                <form class="form__footer d-flex flex-column">
+                    <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
+                    <p class="fs-3 text-light fw-light d-none d-md-block ">Recibe todas nuestras novedades</p>
+
+
+                    <div class="gap-2 d-flex flex-column w-100 subscribe">
+                        <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
+                        <input id="newsletter1" type="text" class="form-control fs-3 text__area d-lg-block"
+                            placeholder="E-mail">
+                        <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
+                            type="button">Subscribete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div
+            class="py-4 mt-4 container-fluid bottomBar d-flex justify-content-around w-100 mx-lg-0 border-top color_secundario align-items-center ">
+            <p class="fs-3 ms-lg-5 text-light fw-light">&copy; Copyright 2021 Nunchi</p>
+            <ul class="list-unstyled d-flex">
+                <a class="mx-4 fab footer-icon fa-twitter icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                    href="https://twitter.com/home" target="_blank"></a>
+                <a class="mx-4 fab footer-icon fa-facebook-f icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                    href="https://www.facebook.com/NunchiBox/" target="_blank"></a>
+                <a class="mx-4 fab footer-icon fa-instagram icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                    href="https://www.instagram.com/nunchibox_ar/?hl=en" target="_blank"></a>
+                <a class="mx-4 far footer-icon fa-envelope-open icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                    href="mailto:nunchibox.info@gmail.com"></a>
+            </ul>
+        </div>
+    </footer>
 
 
     <!-- Bootsrap javascript -->

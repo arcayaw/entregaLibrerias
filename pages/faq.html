@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Nunchi Box | Preguntas frecuentes">
+    <meta name="keywords" content="regalo corporativo, Box de regalo, Preguntas frecuentes">
+
+
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d3fce60580.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/iwl2qzk.css">
@@ -33,7 +39,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!-- personal Styles -->
-    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+
     <link rel="stylesheet" href="../css/estilos.css">
 
     <title>Nunchi | Preguntas frecuentes</title>
@@ -51,34 +57,53 @@
             <p class="m-0 text-center align-middle fs-4">Promociones</p>
         </div>
 
-        <!-- NavBar -->
+        <!-- NAVBAR NUEVA -->
+        <nav class="container pt-0 navbar navbar-expand-lg navbar-light color_primario d-flex">
+            <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light color_primario">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/LogoGold.svg" width="200rem" height="200rem"
-                        class="align-top logo d-inline-block" alt="Logo Nunchi">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <!-- LOGO IMG -->
+                <a class="ps-lg-5 ms-lg-5 navbar-brand" href="../index.html"><img src="../images/LogoGold.svg"
+                        width="200rem" height="200rem" class="navLogo" alt="logo nunchi"></a>
+
+                <!-- COLAPSED BUTTON -->
+                <a class="mb-0 align-self-center text-secondary d-lg-none display-2 font-monospace fw-lighter ms-5 animate__animated animate__pulse"
+                    href="../index.html">
+                    <img src="../images/nuevologonunchi.png" class="logo__sm" alt="logo nunchi"></a>
+                <button class="mt-4 mb-4 navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse navbar__sm" id="navbarNavAltMarkup">
-                    <div class="mx-auto navbar-nav ">
-                        <a class="px-3 nav-item navitem__color fs-2 ps-0 text-uppercase" href="../index.html">Home
-                            <span class="sr-only">(current)</span></a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="./builtdBox.html">Box
-                            Prediseñadas</a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="./newBox.html">Construye
-                            tu Box</a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="faq.html">FAQs</a>
-                        <a class="px-3 nav-item navitem__color fs-2 pe-0 text-uppercase"
-                            href="./contacto.html">Contacto</a>
-                        <a class="px-3 nav-item navitem__color fs-2 pe-0 text-uppercase" href="./animaciones.html">SASS
-                            II</a>
-                    </div>
+                <!--NAV ITEMS -->
+                <div class="collapse navbar-collapse navbar__sm " id="navbarSupportedContent">
+                    <ul class="mb-2 align-self-center m-sm-auto navbar-nav mb-lg-0 justify-content-end">
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./builtdBox.html">BOX PRESDISEÑADAS</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./newBox.html">ARMA TU BOX</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./faq.html">FAQ's</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./contacto.html">CONTACTO</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./aboutUs.html">NOSOTROS</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5 ">
+                            <a href="#"
+                                class=" fas fa-shopping-cart text-decoration-none fs-1 text-dark mx-sm-0 cartIcon"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -88,31 +113,26 @@
     <!--Faq container -->
 
     <div class="container-fluid">
-        <h1 class="pb-0 mb-0 display-1 text-lg-center">Box Personalizadas </h1>
+        <h1 class="mt-5 ">Preguntas frecuentes </h1>
     </div>
 
-    <div class="mx-auto accordion accordion-flush w-75 vh-75" id="accordionExample">
-        <div>
-            <h3 class="pb-4 text-center contactoTitle fs-1 fw-light text-uppercase">Preguntas más frecuentes</h3>
-        </div>
-        <div class="accordion-item ">
-            <h2 class="accordion-header bg-danger" id="headingOne">
+    <div class="py-5 mx-auto mb-5 accordion accordion-flush w-75" id="accordionExample">
+
+        <div class="accordion-item color_primario">
+            <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button color_secundario contactoTitle fs-2 " type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                     aria-controls="collapseOne">
                     ¿Hacen entregas fuera de CABA (Provincia de Buenos Aires)?
                 </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne">
                 <div class="accordion-body contactoTitle fs-3 fw-light ps-4 ">
-                    <strong>Si hacemos</strong> What good is money if it can't inspire terror in your fellow man? And
-                    here I am
-                    using my own lungs
-                    like a
-                    sucker. Marge, just about everything's a sin. Y'ever sat down and read this thing? Technically we're
-                    not
-                    supposed to go to the bathroom.
+                    <strong class="fw-bolder">Si hacemos, dependiendo de la zona.</strong> Por ahora solo llegamos hasta
+                    el 2do cordon del
+                    conourbano. Es importante que nos consultes la dirección en la cual se entregará el regalo para
+                    poder
+                    confirmarte nuestro alcance.
                 </div>
             </div>
         </div>
@@ -125,16 +145,16 @@
                     Me recolgué y necesito un regalo de un día para el otro ¿Es posible?
                 </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse color_primario" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse color_primario" aria-labelledby="headingTwo">
                 <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>I've had it with this school, Skinner. Low test scores, class after class of ugly,
-                        ugly children…
-                        Last
-                        night's "Itchy and Scratchy Show" was, without a doubt, the worst episode *ever.* Rest assured,
-                        I
-                        was on
-                        the Internet within minutes, registering my disgust throughout the world.</p>
+                    <p>Para hacer los regalos lo más especial y personalizados posibles, <strong class="fw-bolder">te
+                            pedimos que nos
+                            contactes
+                            por lo menos 3 días antes de la entrega</strong>. De todas formas si te surge un imprevisto
+                        y necesitas
+                        un regalo de último momento, no dudes en contactarnos para ver como podemos ayudarte
+                        (dependiendo de nuestra disponibilidad).
+                    </p>
                 </div>
             </div>
         </div>
@@ -146,11 +166,10 @@
                     ¿Cómo puedo pagar por la box?
                 </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
                 <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>It's only a model. Bring her forward! Who's that then? …Are you suggesting that
-                        coconuts migrate</p>
+                    <p>Aceptamos transferencias bancarias tanto nacionales como internaciones. También aceptamos
+                        MercadoPago, PayPal, Pionner y criptomonedas.</p>
                 </div>
             </div>
         </div>
@@ -162,13 +181,10 @@
                     ¿En qué horario llegará mi Box?
                 </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
                 <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>Bloody Peasant! Ah, now we see the violence inherent in the system! Burn her
-                        anyway! She looks like
-                        one.
-                        On second thoughts, let's not go there. It is a silly place.</p>
+                    <p> <strong class="fw-bolder">A la hora que tú elijas</strong> entre las 7AM y las 22PM. Siempre
+                        vamos a tener un margen de tiempo de media hora sortear imprevistos o demoras por tráfico. </p>
                 </div>
             </div>
         </div>
@@ -179,101 +195,15 @@
                     ¿Cuánto tiempo antes debo pedir mi Box?
                 </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                data-bs-parent="#accordionExample">
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
                 <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>Burn her! Shh! Knights, I bid you welcome to your new home. Let us ride to
-                        Camelot! It's only a
-                        model.
-                        What a strange person. She looks like one.</p>
+                    <p> <strong class="fw-boldes">Lo que regularmente pedimos son 3 días</strong>, aunque ¡Mientras más
+                        mejor!, así nos das tiempo para implementar toda nuestra creatividad. </p>
                 </div>
             </div>
         </div>
-        <div class="accordion-item color_primario">
-            <h2 class="accordion-header" id="headingSix">
-                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    ¿Hacen entregas fuera de CABA (Provincia)?
-                </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>Oh, you're a dollar naughtier than most. Ven ve voke up, ve had zese wodies. Large
-                        bet on myself in
-                        round one. Fry, you can't just sit here in the dark listening to classical music. I love you,
-                        buddy!</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item color_primario">
-            <h2 class="accordion-header" id="headingSeven">
-                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    Me recolgué y necesito un regalo de un día para el otro ¿Es posible?
-                </button>
-            </h2>
-            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>Would you censor the Venus de Venus just because you can see her spewers? Tell her
-                        you just want to
-                        talk. It has nothing to do with mating. Incidentally, you have a dime up your nose. What are
-                        their
-                        names</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item color_primario">
-            <h2 class="accordion-header" id="headingEight">
-                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    ¿Cómo puedo pagar por mi regalo?
-                </button>
-            </h2>
-            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>That's my family Kay, that's not me. You can act like a man! I'm gonna make him an
-                        offer he can't
-                        refuse. Mr Corleone is Johnny Fontane's godfather. Now Italians regard that as a very close, a
-                        very
-                        sacred religious relationship. I know it was you, Fredo. You broke my heart. You broke my heart!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item color_primario">
-            <h2 class="accordion-header" id="headingNine">
-                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                    ¿En qué horario llegará el pedido?
-                </button>
-            </h2>
-            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>Only don't tell me you're innocent. Because it insults my intelligence and makes me very
-                        angry.</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item color_primario">
-            <h2 class="accordion-header" id="headingTen">
-                <button class="accordion-button collapsed fs-2 contactoTitle" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                    ¿El envío tiene algún cargo?
-                </button>
-            </h2>
-            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-3 fw-light contactoTitle">
-                    <p>This one time, this one time I'll let you ask me about my affairs. Friends and
-                        money - oil and water.
-                        The hotel, the casino. The Corleone Family wants to buy you out. Te salut, Don Corleone.</p>
-                </div>
-            </div>
-        </div>
+
+
     </div>
 
 
@@ -283,34 +213,37 @@
         <i class="fa fa-whatsapp my-float"></i>
     </a>
 
-    <div class="">
-        <footer class="pt-5 mt-5 container-fluid color_terceario">
+    <div class="pt-5">
+        <footer class="pt-5 container-fluid">
             <div class="row">
-                <div class="col-6">
-                    <ul class="nav flex-column ms-lg-5">
+                <div class="col-6 ">
+                    <ul class="nav flex-column ms-lg-5 align-items-center">
                         <li class="mb-2 nav-item"><a href="../index.html"
                                 class="p-0 nav-link fs-2 text-light fw-light">Home</a>
                         </li>
-                        <li class="mb-2 nav-item"><a href=".builtdBox.html"
+                        <li class="mb-2 nav-item"><a href="./builtdBox.html"
                                 class="p-0 nav-link fs-2 text-light fw-light ">Box Prediseñadas</a></li>
                         <li class="mb-2 nav-item"><a href="./newBox.html"
-                                class="p-0 nav-link fs-2 text-light fw-light">Construye tu box</a></li>
-                        <li class="mb-2 nav-item"><a href="faq.html"
-                                class="p-0 nav-link fs-2 text-light fw-light">FAQs</a></li>
+                                class="p-0 nav-link fs-2 text-light fw-light">Arma tu Box</a></li>
+                        <li class="mb-2 nav-item"><a href="./faq.html"
+                                class="p-0 nav-link fs-2 text-light fw-light">FAQ's</a></li>
                         <li class="mb-2 nav-item"><a href="./contacto.html"
                                 class="p-0 nav-link fs-2 text-light fw-light">Contacto</a></li>
+                        <li class="mb-2 nav-item"><a href="./aboutUs.html"
+                                class="p-0 nav-link fs-2 text-light fw-light">Nosotros</a></li>
                     </ul>
                 </div>
+
                 <div class="col-4 offset-1">
                     <form class="form__footer d-flex flex-column">
                         <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
-                        <p class="fs-3 text-light fw-light">Recibe todas nuestras novedades</p>
+                        <p class="fs-3 text-light fw-light d-none d-md-block ">Recibe todas nuestras novedades</p>
 
 
                         <div class="gap-2 d-flex flex-column w-100 subscribe">
                             <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
                             <input id="newsletter1" type="text" class="form-control fs-3 text__area d-lg-block"
-                                placeholder="Corrreo Electrónico">
+                                placeholder="E-mail">
                             <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
                                 type="button">Subscribete</button>
                         </div>
@@ -319,22 +252,21 @@
             </div>
 
             <div
-                class="py-4 my-4 container-fluid bottomBar d-flex justify-content-between w-100 mx-lg-0 border-top color_secundario">
+                class="py-4 mt-4 container-fluid bottomBar d-flex justify-content-around w-100 mx-lg-0 border-top color_secundario align-items-center ">
                 <p class="fs-3 ms-lg-5 text-light fw-light">&copy; Copyright 2021 Nunchi</p>
                 <ul class="list-unstyled d-flex">
-                    <a class="fab footer-icon fa-twitter icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://twitter.com/home"></a>
-                    <a class="fab footer-icon fa-facebook-f icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://www.facebook.com/NunchiBox/"></a>
-                    <a class="fab footer-icon fa-instagram icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
-                    <a class="far footer-icon fa-envelope-open icon mx-lg-4 me-lg-5 link-dark text-light text-decoration-none fs-1"
+                    <a class="mx-4 fab footer-icon fa-twitter icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                        href="https://twitter.com/home" target="_blank"></a>
+                    <a class="mx-4 fab footer-icon fa-facebook-f icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                        href="https://www.facebook.com/NunchiBox/" target="_blank"></a>
+                    <a class="mx-4 fab footer-icon fa-instagram icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                        href="https://www.instagram.com/nunchibox_ar/?hl=en" target="_blank"></a>
+                    <a class="mx-4 far footer-icon fa-envelope-open icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
                         href="mailto:nunchibox.info@gmail.com"></a>
                 </ul>
             </div>
         </footer>
     </div>
-
 
 
     <!-- Bootsrap javascript -->

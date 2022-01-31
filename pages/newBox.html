@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Nunchi Box | Arma tus regalos personalizados">
+    <meta name="keywords"
+        content="regalo corporativo, Box de regalo, taza personalizada, mate personalizada, botella personalizada, regalo spa">
+
+
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d3fce60580.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/iwl2qzk.css">
@@ -33,10 +40,9 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!-- personal Styles -->
-    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
     <link rel="stylesheet" href="../css/estilos.css">
 
-    <title>Nunchi | Diseña tu Box</title>
+    <title>Nunchi | Crea tu Box</title>
 </head>
 
 <body>
@@ -51,65 +57,93 @@
             <p class="m-0 align-middle fs-4">Promociones</p>
         </div>
 
-        <!-- NavBar -->
+        <!-- NAVBAR NUEVA -->
+        <nav class="container pt-0 navbar navbar-expand-lg navbar-light color_primario d-flex">
+            <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light color_primario">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/LogoGold.svg" width="200rem" height="200rem"
-                        class="align-top logo d-inline-block" alt="Logo Nunchi" title="logo Nunchi">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <!-- LOGO IMG -->
+                <a class="ps-lg-5 ms-lg-5 navbar-brand" href="../index.html"><img src="../images/LogoGold.svg"
+                        width="200rem" height="200rem" class="navLogo" alt="logo nunchi"></a>
+
+                <!-- COLAPSED BUTTON -->
+                <a class="mb-0 align-self-center text-secondary d-lg-none display-2 font-monospace fw-lighter ms-5 animate__animated animate__pulse"
+                    href="../index.html">
+                    <img src="../images/nuevologonunchi.png" class="logo__sm" alt="logo nunchi"></a>
+
+                <button class="mt-4 mb-4 navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse navbar__sm" id="navbarNavAltMarkup">
-                    <div class="mx-auto navbar-nav ">
-                        <a class="px-3 nav-item navitem__color fs-2 ps-0 text-uppercase" href="../index.html">Home
-                            <span class="sr-only">(current)</span></a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="./builtdBox.html">Box
-                            Prediseñadas</a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="newBox.html">Construye
-                            tu Box</a>
-                        <a class="px-3 nav-item navitem__color fs-2 text-uppercase" href="./faq.html">FAQs</a>
-                        <a class="px-3 nav-item navitem__color fs-2 pe-0 text-uppercase"
-                            href="./contacto.html">Contacto</a>
-                        <a class="px-3 nav-item navitem__color fs-2 pe-0 text-uppercase" href="./animaciones.html">SASS
-                            II</a>
-                    </div>
+                <!--NAV ITEMS -->
+                <div class="collapse navbar-collapse navbar__sm " id="navbarSupportedContent">
+                    <ul class="mb-2 align-self-center m-sm-auto navbar-nav mb-lg-0 justify-content-end">
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./builtdBox.html">BOX PRESDISEÑADAS</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./newBox.html">CREA TU BOX</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./faq.html">FAQ's</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./contacto.html">CONTACTO</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link fs-2 mx-sm-0" href="./pages/aboutUs.html">NOSOTROS</a>
+                        </li>
+
+                        <li class="nav-item me-lg-5 ">
+                            <a href="#"
+                                class=" fas fa-shopping-cart text-decoration-none fs-1 text-dark mx-sm-0 cartIcon"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- Crea tu Box -->
     <main>
         <div class="container-fluid containerPersonalizadas">
-            <h1 class="pb-0 mb-0 display-1 text-lg-center">Box Personalizadas </h1>
+            <h1 class="mt-5">Crea tu Box </h1>
         </div>
+
+        <!-- first group -->
+
         <section class="py-5 anotherContainer">
-            <div class="row row-col-sm-2 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="../images/productos/wrap.jpg" class="card-img-top" alt="Wrap" title="Wrap">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Wrap</h5>
                             <p class="text-center card-text fs-3 fw-light">700</p>
-                            <div class="btn-group" role=group>
+
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
                             </div>
+
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="../images/productos/granola-min.png" class="card-img-top" alt="Granola"
@@ -117,13 +151,13 @@
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Granola</h5>
                             <p class="text-center card-text fs-3 fw-light">$500</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -131,19 +165,20 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="../images/productos/arepa.jpg" class="card-img-top" alt="Arepas" title="Arepas">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Arepas</h5>
                             <p class="text-center card-text fs-3 fw-light">$600</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -151,19 +186,20 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="../images/productos/oats.jpg" class="card-img-top" alt="Muesli" title="Muesli">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Muesli</h5>
                             <p class="text-center card-text fs-3 fw-light">$700</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -171,6 +207,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="../images/productos/VinoRutini-min.jpg" class="card-img-top" alt="Vino Rutini"
@@ -178,13 +215,13 @@
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Vino Rutini</h5>
                             <p class="text-center card-text fs-3 fw-light">$1500</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -192,6 +229,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="../images/productos/absolut.jpg" class="card-img-top" alt="Absolut Vodka"
@@ -199,13 +237,13 @@
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Absolut</h5>
                             <p class="text-center card-text fs-3 fw-light">$2100</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -213,6 +251,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="../images/productos/Jameson-min.jpg" class="card-img-top" alt="Wiskey Jameson"
@@ -220,13 +259,13 @@
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Jameson</h5>
                             <p class="text-center card-text fs-3 fw-light">$2800</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -234,6 +273,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="text-center card h-100">
                         <img src="..//images/productos/tanqueray-min.jpg" class="card-img-top" alt=" Gin Tanqueray"
@@ -241,13 +281,13 @@
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Tanqueray</h5>
                             <p class="text-center card-text fs-3 fw-light">$1900</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -255,20 +295,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+
+            </div>
+
+
+
+            <!-- segunda tanda hecha con grid -->
+
+            <div class="listaProductos">
+
+                <div class="producto">
                     <div class="text-center card h-100">
-                        <img src="../images/productos/ferreroRocher-min.jpg" class="card-img-top" alt="Ferrero Rocher"
+                        <img src=" ../images/productos/ferreroRocher-min.jpg" class="card-img-top" alt="Ferrero Rocher"
                             title="Ferrero Rocher">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Ferrero Rocher</h5>
                             <p class="text-center card-text fs-3 fw-light">$700</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -277,22 +326,22 @@
                     </div>
                 </div>
 
-                <!-- segunda tanda -->
 
-                <div class="col">
+
+                <div class="producto">
                     <div class="text-center card h-100">
                         <img src="../images/productos/hersheys-min.jpg" class="card-img-top boxUno" alt="HERSHEY"
                             title="Hershey's">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">HERSHEY'S</h5>
                             <p class="text-center card-text fs-3 fw-light">$650</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -300,20 +349,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+
+
+                <div class="producto">
                     <div class="text-center card h-100">
                         <img src="../images/productos/Nutella-min.jpg" class="card-img-top box2" alt="nutella"
                             title="nutella">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">NUTELLA</h5>
                             <p class="text-center card-text fs-3 fw-light">$1150</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -321,20 +372,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+
+
+                <div class="producto">
                     <div class="text-center card h-100">
                         <img src="../images/productos/Toblerone-min.jpg" class="card-img-top" alt="TOBLERONE"
                             title="toblerone">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">TOBLERONE</h5>
                             <p class="text-center card-text fs-3 fw-light">$900</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -342,19 +395,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+
+
+                <div class="producto">
                     <div class="text-center card h-100">
                         <img src="../images/productos/mate-min.jpg" class="card-img-top" alt="Mate" title="mate">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Mate</h5>
                             <p class="text-center card-text fs-3 fw-light">$650</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -362,21 +417,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+
+
+                <div class="producto">
                     <div class="text-center card h-100">
                         <img src="../images/productos/arregloFloral-min.jpg" class="card-img-top" alt="
-                        ARREGLO FRUTAL" title="arreglo frutal">
+                            ARREGLO FRUTAL" title="arreglo frutal">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">
                                 ARREGLO FRUTAL</h5>
                             <p class="text-center card-text fs-3 fw-light">$2500</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -384,19 +441,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+
+
+                <div class="producto">
                     <div class="text-center card h-100">
                         <img src="../images/productos/taza.jpg" class="card-img-top" alt="taza" title="taza">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Taza personalizada</h5>
                             <p class="text-center card-text fs-3 fw-light">$3500</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -404,20 +463,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+
+
+                <div class="producto">
                     <div class="text-center card h-100">
                         <img src="../images/productos/botellaMetalica-min.jpg" class="card-img-top"
                             alt="Botella metalica" title="Botella metalica">
                         <div class="card-body">
                             <h5 class="text-center card-title fs-2 fw-light text-uppercase">Botella metálica</h5>
                             <p class="text-center card-text fs-3 fw-light">$1500</p>
-                            <div class="btn-group" role=group>
+                            <div class="btn-group align-items-center" role=group>
                                 <button class="btn">
                                     <i href="#" class="far fa-minus-square fs-3 "></i>
                                 </button>
-                                <button class="btn">
+                                <p class="m-0 ">
                                     <span class="fs-3">0</span>
-                                </button>
+                                </p>
                                 <button class="btn">
                                     <i href="#" class="far fa-plus-square fs-3 "></i>
                                 </button>
@@ -430,7 +491,9 @@
         </section>
 
 
+
     </main>
+
     <!-- Footer -->
 
     <a class="whap" href="https://api.whatsapp.com/send?phone=5491157175314" target="_blank">
@@ -438,34 +501,36 @@
     </a>
 
     <div class="">
-        <footer class="pt-5 container-fluid color_terceario ">
+        <footer class="pt-5 container-fluid">
             <div class="row">
-                <div class="col-6">
-                    <ul class="nav flex-column ms-lg-5">
+                <div class="col-6 ">
+                    <ul class="nav flex-column ms-lg-5 align-items-center">
                         <li class="mb-2 nav-item"><a href="../index.html"
                                 class="p-0 nav-link fs-2 text-light fw-light">Home</a>
                         </li>
                         <li class="mb-2 nav-item"><a href="./builtdBox.html"
                                 class="p-0 nav-link fs-2 text-light fw-light ">Box Prediseñadas</a></li>
-                        <li class="mb-2 nav-item"><a href="newBox.html"
-                                class="p-0 nav-link fs-2 text-light fw-light">Construye tu box</a></li>
+                        <li class="mb-2 nav-item"><a href="./newBox.html"
+                                class="p-0 nav-link fs-2 text-light fw-light">Arma tu Box</a></li>
                         <li class="mb-2 nav-item"><a href="./faq.html"
-                                class="p-0 nav-link fs-2 text-light fw-light">FAQs</a></li>
+                                class="p-0 nav-link fs-2 text-light fw-light">FAQ's</a></li>
                         <li class="mb-2 nav-item"><a href="./contacto.html"
                                 class="p-0 nav-link fs-2 text-light fw-light">Contacto</a></li>
+                        <li class="mb-2 nav-item"><a href="./aboutUs.html"
+                                class="p-0 nav-link fs-2 text-light fw-light">Nosotros</a></li>
                     </ul>
                 </div>
 
                 <div class="col-4 offset-1">
                     <form class="form__footer d-flex flex-column">
                         <h5 class=" fs-1 text-light fw-light">Subscribete a nuestro newsletter</h5>
-                        <p class="fs-3 text-light fw-light">Recibe todas nuestras novedades</p>
+                        <p class="fs-3 text-light fw-light d-none d-md-block ">Recibe todas nuestras novedades</p>
 
 
                         <div class="gap-2 d-flex flex-column w-100 subscribe">
                             <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
                             <input id="newsletter1" type="text" class="form-control fs-3 text__area d-lg-block"
-                                placeholder="Corrreo Electrónico">
+                                placeholder="E-mail">
                             <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
                                 type="button">Subscribete</button>
                         </div>
@@ -474,22 +539,21 @@
             </div>
 
             <div
-                class="py-4 my-4 container-fluid bottomBar d-flex justify-content-between w-100 mx-lg-0 border-top color_secundario">
+                class="py-4 mt-4 container-fluid bottomBar d-flex justify-content-around w-100 mx-lg-0 border-top color_secundario align-items-center ">
                 <p class="fs-3 ms-lg-5 text-light fw-light">&copy; Copyright 2021 Nunchi</p>
                 <ul class="list-unstyled d-flex">
-                    <a class="fab footer-icon fa-twitter icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://twitter.com/home"></a>
-                    <a class="fab footer-icon fa-facebook-f icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://www.facebook.com/NunchiBox/"></a>
-                    <a class="fab footer-icon fa-instagram icon mx-lg-4 ms-3 link-dark text-light text-decoration-none fs-1"
-                        href="https://www.instagram.com/nunchibox_ar/?hl=en"></a>
-                    <a class="far footer-icon fa-envelope-open icon mx-lg-4 me-lg-5 link-dark text-light text-decoration-none fs-1"
+                    <a class="mx-4 fab footer-icon fa-twitter icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                        href="https://twitter.com/home" target="_blank"></a>
+                    <a class="mx-4 fab footer-icon fa-facebook-f icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                        href="https://www.facebook.com/NunchiBox/" target="_blank"></a>
+                    <a class="mx-4 fab footer-icon fa-instagram icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
+                        href="https://www.instagram.com/nunchibox_ar/?hl=en" target="_blank"></a>
+                    <a class="mx-4 far footer-icon fa-envelope-open icon mx-lg-4 link-dark text-light text-decoration-none fs-1"
                         href="mailto:nunchibox.info@gmail.com"></a>
                 </ul>
             </div>
         </footer>
     </div>
-
 
 
     <!-- Bootsrap javascript -->

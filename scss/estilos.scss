@@ -1,8 +1,6 @@
 @import "var";
 @import "wsp";
 @import "mixins";
-@import "map";
-
 
 /*-- reset --*/
 
@@ -28,9 +26,35 @@ html {
     
 }
 
+
+
 body {
     font-family: 'Sofia Pro', sans-serif;
     background-color: $colorPrincipal;
+    h1{
+        font-size: 4rem;
+        color: $colorDorado;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+        }
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*-- Barras --*/
@@ -55,47 +79,56 @@ nav{
     background-color: $colorPrincipal;
 
     .logo{
-        margin-left: 15rem;
+        // margin-left: 15rem;
         width: 20rem;
-
-
     }
 
-    .navitem__color {
-        color: $colorLetras;
-        font-family: 'sofia-pro', sans-serif;
+    a:hover {
+        color: $colorSecundario !important;
+        text-decoration: underline $colorSecundario !important;
+        font-weight: bolder;
     }
-
-    a:hover{
-        color: $colorSecundario;
-        text-decoration: underline;
-
+    .cartIcon{
+        color: $colorSecundario !important;
     }
-
-    a {
-        text-decoration: none;
-    }
-
-}
-
-
-
-.containerCarousel{
-    background-color: $colorPrincipal;
-
-    h1{
-        font-family: 'Merienda', cursive;
-        font-size: 5rem;
-        color: $colorDorado;
-        text-align: center;
+    .cartIcon:hover{
+        text-decoration: none !important;
     }
 }
 
-    .hero{
-        padding-bottom: 5rem;
-        background-color: $colorPrincipal;
-    }
 
+/*Carousel*/
+
+.carousel {
+    margin-bottom: 4rem;
+
+    .carousel-item {
+        height: 60rem;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 60rem;
+        }
+    .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+    }
+    }
+}
+
+
+@supports(object-fit: cover) {
+    .box img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    }
+}
+
+
+/***Cards***/
 
 .cardsContainer{
 
@@ -125,21 +158,10 @@ nav{
     h3{
         color: $colorLetras;
     }
+    
 }
 
 /*-- BOX presdisenadas --*/
-
-.builtBoxContainer{
-    
-        background-color: $colorPrincipal;
-        h1{
-            font-family: 'Merienda', cursive;
-        font-size: 5rem;
-        color: $colorDorado;
-        text-align: center;
-        }
-    
-}
 
 .anotherContainer{
     background-color: $colorPrincipal;
@@ -163,48 +185,30 @@ nav{
 
 }
 
-.boxUno:hover{
-    background-image: url(../images/nunchi-Lucia.jpg);
-}
 
 /*-- Box personalizada --*/
 .containerPersonalizadas{
     background-color: $colorPrincipal;
+    
+}
 
-    h1{
-        font-family: 'Merienda', cursive;
-    font-size: 5rem;
-    color: $colorDorado;
-    text-align: center;
+.listaProductos{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    column-gap: 1.5rem;
+
+    .producto{
+    width: 278px;
+    margin: 1.5rem 0 0 0;
     }
-
 }
 
 button i, span{
     color: $colorSecundario;
 }
-/*-- Footer --*/
-
-footer{
-    background-color: $colorTerceario;
-}
 
 
-
-.suscribir__color {
-    background-color: $colorSecundario;
-}
-
-h1{
-    font-family: 'Merienda', cursive;
-font-size: 5rem;
-color: $colorDorado;
-text-align: center;
-}
-
-.contactoTitle{
-    color: $colorLetras;
-}
+/***** Contacto Section *****/
 
 .containerMap{
 
@@ -221,35 +225,92 @@ text-align: center;
     }
 }
 
+.contactoTitle{
+    color: $colorLetras;
+}
 
 
-/*-- faq  --*/
-
-// .acordion{
-//     .accordion-button{
-//         color: $colorLetras !important;
-//     }
-
-
-// }
-
-// .accordion-button.collapsed {
-//     color: white;
-//     background: $colorTerceario;
-// }
+/***** FAQ Section *****/
 
 .acordion-header{
     background-color: $colorSecundario;
 }
 
 
+/***** Account *****/
+
+.loginContainer{
+    background-color: $colorPrincipal;
+    display: flex;
+    height: 60rem;
+    align-items: center;
+    height: 50vh;
+    margin: 2rem;
+
+    .loginForm{
+        padding: 25px;
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom:  10rem;
+
+
+        .flexImput{
+        
+        }
+
+        input[type="text"],
+        [type="password"]{
+            padding: 10px;
+            font-size: 15px;
+            margin: 10px;
+
+        
+        }
+        
+
+        label{
+            color: $colorLetras;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .susbcribe__button{
+        width: 10rem;
+        margin: 0 auto;
+        }
+    }
+
+
+
+    .formSubmit{
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+/*-- Footer --*/
+
+footer{
+    background-color: $colorTerceario;
+}
+
+
+
+.suscribir__color {
+    background-color: $colorSecundario;
+}
+
 
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
 @media (max-width: 576px) {
-    img.logo {
-        margin-left: 11rem ;
-    }
+    
 
     .newsbar{
         font-size: 3vw ;
@@ -261,17 +322,24 @@ text-align: center;
         text-align: center;
     }
 
-    a {
-        margin: 1rem 0;
+    .navLogo{
+        display: none;
     }
 
-    .navitem__color:hover {
-        color: #AA7680;
-        text-decoration: underline;
+    a {
+        margin: 1rem 0;
+        
     }
+
 
     h5 {
         text-align: center;
+    }
+
+    .logo__sm{
+        width: 200px;
+        height: 50px;
+
     }
 
     .cliente {
@@ -285,6 +353,8 @@ text-align: center;
         margin-left: 1.3rem;
         margin-right: 2rem;
     }
+
+
 
     .anotherContainer{
         max-width: 70%;
@@ -305,14 +375,38 @@ text-align: center;
     }
 }
 
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
 
-@media (max-width: 390px) {
+@media (min-width: 40em) {
 
 
-    img.logo {
-        margin-left: 6rem ;
+    .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
     }
 
+}
+
+@media (max-width: 415px) {
+    h1{
+        font-size: 2.5rem !important;
+        color: $colorDorado;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+        }
+
+    .navLogo{
+        display: none;
+    }
+
+        .box{
+            height: 35vh;
+    
+    
+        }
 
     .cliente {
         width: 100px;
@@ -330,4 +424,21 @@ text-align: center;
         margin: 0;
     }
 
+    .listaProductos{
+        grid-template-columns: repeat(1, 1fr);
+       
+        
+
+        .producto{
+            width: 100%;
+            margin: 7px 0;
+            
+        }
+        .producto:first-child{
+            padding: 10px 0 0 0 ;
+        }
+        
+    }
+
 }    
+
