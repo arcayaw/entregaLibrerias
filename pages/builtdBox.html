@@ -38,6 +38,10 @@
     <!-- Favicon   -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
     <!-- personal Styles -->
     <link rel="stylesheet" href="../css/estilos.css">
 
@@ -82,9 +86,9 @@
                             <a class="nav-link fs-2 mx-sm-0" href="./builtdBox.html">BOX PRESDISEÑADAS</a>
                         </li>
 
-                        <li class="nav-item me-lg-5">
+                        <!-- <li class="nav-item me-lg-5">
                             <a class="nav-link fs-2 mx-sm-0" href="./newBox.html">ARMA TU BOX</a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item me-lg-5">
                             <a class="nav-link fs-2 mx-sm-0" href="./faq.html">FAQ's</a>
@@ -99,9 +103,59 @@
                         </li>
 
                         <li class="nav-item me-lg-5 ">
-                            <a href="#"
-                                class=" fas fa-shopping-cart text-decoration-none fs-1 text-dark mx-sm-0 cartIcon"></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class=" fas fa-shopping-cart text-decoration-none fs-1 mx-sm-0 cartIcon"></a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="cart">
+                                                <div class="table-responsive">
+                                                    <table id="lista-cart" class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="p-2 px-3 text-uppercase">Producto</div>
+                                                                </th>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="py-2 text-center text-uppercase">Precio
+                                                                    </div>
+                                                                </th>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="py-2 text-center text-uppercase">
+                                                                        Cantidad</div>
+                                                                </th>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="py-2 text-center text-uppercase">
+                                                                        Eliminar</div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <a href=" #" id="vaciar-cart" class="mt-5 ms-3 btn btn-danger">Vaciar
+                                                    cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
+
+
                     </ul>
                 </div>
             </div>
@@ -111,32 +165,30 @@
 
 
 
-    <section class="anotherContainer">
-
-
+    <section class="anotherContainer" id="lista-Cajas">
         <h1 class="mt-5 ">Box Prediseñadas</h1>
-
-
         <div class="py-5 row row-cols-1 row-cols-md-3 g-4">
+
             <div class="col">
                 <div class="text-center card h-100">
-                    <img src="../images/nunchi-GinBox-min.jpg" class="card-img-top boxUno" alt="Box Cocktail"
+                    <img src="../images/nunchi-GinBox-min.jpg" class="card-img-top" alt="Box Cocktail"
                         title="Box Cocktail">
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box cocktail</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="1">Agregar</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="text-center card h-100">
-                    <img src="../images/nunchi-Helena-min.jpg" class="card-img-top box2" alt="Box KidsI"
-                        title="Box KidsI">
+                    <img src="../images/nunchi-Helena-min.jpg" class="card-img-top" alt="Box KidsI" title="Box KidsI">
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box Kids I</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="2">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -147,7 +199,8 @@
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box Star Wars</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="3">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -158,7 +211,8 @@
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box Navidad</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="4">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -169,7 +223,8 @@
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box futbol</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="5">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -180,7 +235,8 @@
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box Corporativa</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="6">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -190,7 +246,8 @@
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box Frutal</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="7">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -201,7 +258,8 @@
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box Kids II</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="8">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -212,7 +270,8 @@
                     <div class="card-body">
                         <h5 class="text-center card-title fs-2 fw-light text-uppercase">Box Desayuno</h5>
                         <p class="text-center card-text fs-3 fw-light">$6500</p>
-                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow">Agregar</a>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="9">Agregar</a>
                     </div>
                 </div>
             </div>
@@ -253,17 +312,15 @@
                 </div>
 
                 <div class="col-4 offset-1">
-                    <form class="form__footer d-flex flex-column">
+                    <form class="form__footer d-flex flex-column" id="idForm">
                         <h5 class=" fs-2 text-light fw-light">Subscribete a nuestro newsletter</h5>
                         <p class="fs-3 text-light fw-light d-none d-md-block ">Recibe todas nuestras novedades</p>
-
-
                         <div class="gap-2 d-flex flex-column w-100 subscribe">
-                            <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
-                            <input id="newsletter1" type="text" class="form-control fs-3 text__area d-lg-block"
-                                placeholder="E-mail">
-                            <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
-                                type="button">Subscribete</button>
+                            <label for="" class="visually-hidden fs-3">Corrreo Electrónico</label>
+                            <input id="idEmail" type="email" minlength="3" maxlength="64"
+                                class="form-control fs-3 text__area d-lg-block" placeholder="E-mail" name="email">
+                            <button type="submit" id="botonSuscribirse"
+                                class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block">Subscribete</button>
                         </div>
                     </form>
                 </div>
@@ -288,10 +345,20 @@
 
 
     <!-- Bootsrap javascript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+
+    <!-- sweettAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- scritp propio -->
+    <script src="../js/script.js"></script>
+    <script src="../js/newsletter.js"></script>
 </body>
 
 </html>

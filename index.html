@@ -82,9 +82,9 @@
                             <a class="nav-link fs-2 mx-sm-0" href="./pages/builtdBox.html">BOX PRESDISEÑADAS</a>
                         </li>
 
-                        <li class="nav-item me-lg-5">
+                        <!-- <li class="nav-item me-lg-5">
                             <a class="nav-link fs-2 mx-sm-0" href="./pages/newBox.html">ARMA TU BOX</a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item me-lg-5">
                             <a class="nav-link fs-2 mx-sm-0" href="./pages/faq.html">FAQ's</a>
@@ -99,8 +99,56 @@
                         </li>
 
                         <li class="nav-item me-lg-5 ">
-                            <a href="#"
-                                class="fas fa-shopping-cart text-decoration-none fs-1 text-dark mx-sm-0 cartIcon"></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class=" fas fa-shopping-cart text-decoration-none fs-1 mx-sm-0 cartIcon"></a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="cart">
+                                                <div class="table-responsive">
+                                                    <table id="lista-cart" class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="p-2 px-3 text-uppercase">Producto</div>
+                                                                </th>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="py-2 text-center text-uppercase">Precio
+                                                                    </div>
+                                                                </th>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="py-2 text-center text-uppercase">
+                                                                        Cantidad</div>
+                                                                </th>
+                                                                <th scope="col" class="border-0 bg-light">
+                                                                    <div class="py-2 text-center text-uppercase">
+                                                                        Eliminar</div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <a href=" #" id="vaciar-cart" class="mt-5 ms-3 btn btn-danger">Vaciar
+                                                    cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -267,17 +315,15 @@
             </div>
 
             <div class="col-4 offset-1">
-                <form class="form__footer d-flex flex-column">
+                <form class="form__footer d-flex flex-column" id="idForm">
                     <h5 class=" fs-2 text-light fw-light">Subscribete a nuestro newsletter</h5>
                     <p class="fs-3 text-light fw-light d-none d-md-block ">Recibe todas nuestras novedades</p>
-
-
                     <div class="gap-2 d-flex flex-column w-100 subscribe">
-                        <label for="newsletter1" class="visually-hidden fs-3">Corrreo Electrónico</label>
-                        <input id="newsletter1" type="text" class="form-control fs-3 text__area d-lg-block"
-                            placeholder="E-mail">
-                        <button class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block"
-                            type="button">Subscribete</button>
+                        <label for="" class="visually-hidden fs-3">Corrreo Electrónico</label>
+                        <input id="idEmail" type="email" minlength="3" maxlength="64"
+                            class="form-control fs-3 text__area d-lg-block" placeholder="E-mail" name="email">
+                        <button type="submit" id="botonSuscribirse"
+                            class="btn suscribir__color fs-3 text-light fw-light susbcribe__button d-lg-block">Subscribete</button>
                     </div>
                 </form>
             </div>
@@ -305,6 +351,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- sweettAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- scritp propio -->
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/newsletter.js"></script>
 </body>
 
 </html>
