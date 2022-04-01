@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "img": "../images/nunchi-GinBox-min.jpg",
+    "nombre": "Box cocktail",
+    "precio": 5500
+  },
+  {
+    "id": "2",
+    "img": "../images/nunchi-Helena-min.jpg",
+    "nombre": "Box Kids I",
+    "precio": 6000
+  },
+  {
+    "id": "3",
+    "img": "../images/nunchi-Trooper-min.jpg",
+    "nombre": "Box Star Wars",
+    "precio": 4500
+  },
+  {
+    "id": "4",
+    "img": "../images/nunchi-Navidad-min.jpg",
+    "nombre": "Box Navidad",
+    "precio": 6500
+  },
+  {
+    "id": "5",
+    "img": "../images/nunchi-CAI-min-min.jpg",
+    "nombre": "Box futbol",
+    "precio": 6200
+  },
+  {
+    "id": "6",
+    "img": "../images/nunchi-Moove-min.jpg",
+    "nombre": "Box Corporativa",
+    "precio": 7000
+  },
+  {
+    "id": "7",
+    "img": "../images/nunchi-Kiwi-min.jpg",
+    "nombre": "Box Frutal",
+    "precio": 6300
+  },
+  {
+    "id": "8",
+    "img": "../images/nunchi-astronauta-min.jpg",
+    "nombre": "Box Kids II",
+    "precio": 5100
+  },
+  {
+    "id": "9",
+    "img": "../images/nunchi-MediaLuns-min.jpg",
+    "nombre": "Box Desayuno",
+    "precio": 5400
+  }
+]

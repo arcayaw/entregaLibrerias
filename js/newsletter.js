@@ -40,7 +40,7 @@ formulario.addEventListener("submit", (e) => {
     // formulario.reset();
   } else {
     swal({
-      title: "Atentición!",
+      title: "Atención!",
       text: "Ya estabas en nuestra base de datos. Pronto recibiras nuestras novedades!",
       icon: "warning",
     });

@@ -4,34 +4,57 @@ const containercart = document.querySelector("#lista-cart tbody");
 const vaciarcart = document.querySelector("#vaciar-cart");
 const listaCajas = document.querySelector("#lista-Cajas");
 
+let divProductos = document.getElementById("divProductos");
+
+//Muestro los productos en el HTML desde el JSON
+fetch("../json/productos.json")
+  .then((res) => res.json())
+  .then((productos) => {
+    productos.forEach((producto) => {
+      divProductos.innerHTML += `
+      <div class="col">
+                <div class="text-center card h-100" id"producto${producto.id}">
+                    <img src="../img/${producto.img}" class="card-img-top" alt="${producto.nombre}"
+                        title="Box Cocktail">
+                    <div class="card-body">
+                        <h5 class="text-center card-title fs-2 fw-light text-uppercase">${producto.nombre}</h5>
+                        <p class="text-center card-text fs-3 fw-light">$${producto.precio}</p>
+                        <a href="#" class="btn text-light text-uppercase fs-3 fw-light hvr-grow agregar-cart"
+                            data-id="${producto.id}">Agregar</a>
+                    </div>
+                </div>
+            </div>
+      `;
+    });
+  });
+
 //array
 let cajasencart = [];
 
 metodosCaja();
 function metodosCaja() {
   //agregamos cajas al cart
-
   listaCajas.addEventListener("click", agregarCaja);
 
-  //elimina las cajas del cart
+  //elimina una caja seleccionada
   cart.addEventListener("click", borrarCaja);
 
+  //muestra las box del localStorage
   document.addEventListener("DOMContenLoaded", () => {
     cajasencart = JSON.parse(localStorage.getItem("cart")) || [];
-
     cartHTML();
   });
 
+  //vaciamos el array
   vaciarcart.addEventListener("click", () => {
     cajasencart = [];
-    //vaciamos el array
 
     clearHTML();
     //limpiamos el HTML
   });
 }
 
-//funciones
+//FUNCIONES
 
 //agregar cajas
 function agregarCaja(e) {
@@ -56,7 +79,6 @@ function agregarCaja(e) {
 }
 
 //eliminar cajas
-
 function borrarCaja(e) {
   console.log(e.target.classList);
   if (e.target.classList.contains("borrar-caja")) {
@@ -66,6 +88,7 @@ function borrarCaja(e) {
     //elimina cajas del arreglos por el data-id
     cajasencart = cajasencart.filter((caja) => caja.id !== cajaID);
     console.log(cajasencart); //muestra el array actualizado
+    console.log(cajaID);
 
     cartHTML();
   }
@@ -105,13 +128,11 @@ function verCajas(caja) {
 function cartHTML() {
   clearHTML();
 
-  cajasencart.forEach((caja) => {
-    const { imagen, nombre, precio, id, cantidad } = caja;
+  cajasencart.forEach((cajasencart) => {
+    const { imagen, nombre, precio, id, cantidad } = cajasencart;
 
     const seSuponeQueEsUnaRow = document.createElement("tr");
     seSuponeQueEsUnaRow.innerHTML = `
-  
-    
     <th scope="row" class="border-0">
         <div class="p-2">
           <img src="${imagen}" alt="" width="70"
@@ -122,12 +143,13 @@ function cartHTML() {
           </div>
     </th>
       <td class="align-middle text-center border-0">
-      <strong>${precio}</strong>
+        <strong>${precio}</strong>
       </td>
       <td class="align-middle text-center border-0"><strong>${cantidad}</strong></td>
       <td class="align-middle text-center  border-0">
-      <a href="#" class="text-white borrar-caja" data-id="${id}">
-      <i class="fa fa-trash"></i></a>
+        <a href="#" class="text-white borrar-caja" data-id="${id}">
+
+        <i class="fa fa-trash"></i></a>
       </td>
     `;
 
@@ -138,12 +160,10 @@ function cartHTML() {
 
 function nuevoStorage() {
   localStorage.setItem("cart", JSON.stringify(cajasencart));
-  console.log("probando nuevo storage");
 }
 
 function clearHTML() {
   while (containercart.firstChild) {
     containercart.removeChild(containercart.firstChild);
-    console.log("probando clearHTML");
   }
 }
